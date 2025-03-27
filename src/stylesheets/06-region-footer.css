@@ -1,0 +1,64 @@
+/*
+ FOOTER
+ http://otwcode.github.com/docs/front_end_coding/patterns/supertypes
+*/
+
+#footer {
+    background: var(--red);
+    color: var(--red-contrast);
+    border-top: 2px solid;
+    float: left;
+    font-size: 0.75em;
+    position: relative;
+    padding: 0;
+    width: 100%;
+
+    ul {
+        clear: both;
+        margin: 1.5em 0;
+        padding: 1em 5%;
+        float: left;
+        text-align: left;
+        width: 90%;
+    }
+
+    li {
+        position: relative;
+        display: block;
+    }
+
+    a {
+        background: transparent;
+        border: 0;
+        font-weight: 400;
+        margin: auto;
+        outline: 0;
+        padding: 0;
+        vertical-align: baseline;
+        border-radius: 0;
+        color: var(--red-contrast);
+        display: inline;
+        border-bottom: 1px solid;
+        line-height: 1.5;
+        white-space: normal;
+
+        &:focus {
+            outline: 1px dotted;
+        }
+    }
+
+    .module {
+        max-width: 20%;
+        padding: 0 2%;
+    }
+
+    .menu {
+        margin: 0;
+        padding: 0;
+    }
+
+    .heading {
+        display: block;
+        color: var(--red-contrast);
+    }
+}

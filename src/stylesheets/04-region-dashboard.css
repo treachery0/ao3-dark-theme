@@ -1,0 +1,62 @@
+/*
+ DASHBOARD
+ http://otwcode.github.com/docs/front_end_coding/patterns/supertypes
+*/
+
+#dashboard {
+    width: 12.5em;
+    padding: 0.5em;
+    float: left;
+
+    li {
+        padding: 0;
+    }
+
+    a, span {
+        color: var(--foreground-lighter);
+        display: block;
+        white-space: normal;
+        height: auto;
+        line-height: 2;
+        padding: 0 0.5em;
+        margin: 0;
+        border: none;
+        background: transparent;
+        vertical-align: middle;
+        word-wrap: break-word;
+    }
+
+    a:hover {
+        background: var(--transparent-lighten);
+    }
+
+    ul {
+        float: none;
+        display: block;
+        padding: 1em 0;
+        text-align: right;
+        border-top: 1px solid var(--foreground-darker);
+        position: relative;
+
+        &:first-of-type {
+            border-top: none;
+        }
+    }
+
+    .current {
+        color: var(--orange-contrast);
+        background: var(--orange);
+    }
+
+    .secondary {
+        right: auto;
+    }
+
+    &.own {
+        background: transparent;
+        border-top: none;
+        border-bottom: none;
+        opacity: 1;
+        border-radius: 0.25em;
+    }
+}

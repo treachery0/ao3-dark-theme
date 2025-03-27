@@ -1,0 +1,112 @@
+/*==ROLES AND STATES
+http://otwcode.github.com/docs/front_end_coding/patterns/modifiers
+*/
+
+/*
+.own, .draft, .draft .wrapper, .unread, .child, .unwrangled, .unreviewed {
+    background: #ededed;
+    opacity: 0.95;
+}
+*/
+
+.draft {
+    border: 2px dashed var(--foreground);
+    padding: 0.75em;
+    border-radius: 0.5em;
+}
+
+#previewpane {
+    margin-top: 0.5em;
+}
+
+/*(these states spoof the ".navigation .current" style)*/
+
+span.unread, .replied, span.claimed, .actions span.defaulted {
+    background: #ccc;
+    color: var(--red);
+    width: auto;
+    line-height: 1.286;
+    font-weight: 100;
+    font-size: 100%;
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Helvetica, sans-serif, 'GNU Unifont';
+    height: 1.286em;
+    vertical-align: middle;
+    display: inline-block;
+    padding: 0.25em 0.75em;
+    white-space: nowrap;
+    overflow: visible;
+    position: relative;
+    text-decoration: none;
+    border: 1px solid #bbb;
+    border-bottom: 1px solid #aaa;
+    border-radius: 0.25em;
+}
+
+.actions span.defaulted {
+    color: #111;
+}
+
+.canonical, li.requested {
+    font-weight: 700;
+}
+
+.hidden, body .hidden, .actions .hidden, .actions a.hidden, #dashboard .hidden {
+    display: none;
+}
+
+.draggable, .droppable, span.requested, .nominations .rejected {
+    color: var(--red);
+}
+
+span.offered, .replied, .nominations .approved {
+    color: #008000;
+}
+
+.nominations {
+    .approved {
+        background: #d1f0d1;
+    }
+
+    .rejected {
+        background: #efd1d1;
+    }
+}
+
+span.offered.requested {
+    color: #876714;
+}
+
+/* Arrows for the accordion widget */
+
+.collapsed::after {
+    content: " \2193";
+}
+
+.expanded::after {
+    content: " \2191";
+}
+
+/*This is a helper for Back End and can be overridden contextually anywhere*/
+
+.commas li {
+    display: inline;
+
+    &::after {
+        content: ", ";
+    }
+
+    &:last-child::after, &:only-child::after {
+        content: none;
+    }
+}
+
+/* CONTEXTS */
+
+.dashboard .own {
+    opacity: 1;
+}
+
+.comment span.unreviewed {
+    background: transparent;
+    opacity: 1;
+}

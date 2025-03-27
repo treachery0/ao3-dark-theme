@@ -1,0 +1,68 @@
+/*
+ PREFACE
+ blockquote contents (the user-written notes) are styled in userstuff.css like all other user content
+ .preface appears within #workskin on a work page
+*/
+
+div.preface {
+    margin: 1.5em 3em;
+    padding: 0.643em 0.643em 0;
+    float: none;
+
+    .module {
+        float: none;
+        margin: 0;
+        padding: 0 0 0.643em;
+        width: auto;
+    }
+
+    .title, .byline, .byline a {
+        border: 0;
+        text-align: center;
+    }
+
+    .notes, .summary, .series, .children {
+        min-height: 5em;
+    }
+
+    .series ul, .children ul {
+        padding: 0 0.643em;
+    }
+
+    .associations {
+        margin-bottom: 1.5em;
+    }
+
+    .jump {
+        margin-top: 1.5em;
+    }
+}
+
+.chapter .preface {
+    border-top: 1px solid;
+}
+
+.preface {
+    h3 {
+        background: transparent;
+        border-bottom: 1px solid;
+    }
+
+    h2.title {
+        display: block;
+        border-bottom: 0;
+        clear: right;
+    }
+
+    blockquote {
+        border: 0;
+    }
+}
+
+div.afterword {
+    margin-bottom: 2.5em;
+
+    .series h3, .children h3 {
+        border-bottom: none;
+    }
+}

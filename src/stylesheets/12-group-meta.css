@@ -1,0 +1,100 @@
+/*
+ META
+ https://archiveofourown.org/works/<id>
+ https://archiveofourown.org/users/<username>/profile
+*/
+
+/* meta container */
+.meta {
+    background: var(--background-lighter);
+    border-radius: 0.5em;
+    padding: 1em 0.75em;
+    clear: right;
+    position: relative;
+    overflow: hidden;
+
+    /* property names */
+    dt {
+        min-width: 10.5em;
+        width: 25%;
+        float: left;
+        clear: left;
+    }
+
+    /* property values */
+    dd {
+        width: 72.5%;
+        float: left;
+        margin: 0 0 0.75em;
+
+        /* list items, like individual tags */
+        ul li {
+            display: inline;
+            margin: auto;
+            padding-left: 0.25em;
+
+            &:first-child {
+                padding-left: 0;
+            }
+        }
+
+        &:last-child, blockquote {
+            margin: 0;
+        }
+    }
+
+    /* statistics list */
+    .stats dl {
+        float: left;
+        margin-top: 0;
+        padding-left: 0;
+
+        /* stat key-value pairs */
+        dd, dt {
+            margin: 0 0.375em auto 0;
+            padding-left: 0.25em;
+            width: auto;
+            min-width: 0;
+            clear: none;
+            float: left;
+
+            /* first item in statistics */
+            &:first-child {
+                padding-left: 0;
+            }
+        }
+    }
+}
+
+/* TODO: where? */
+.dashboard .meta .clear {
+    clear: right;
+}
+
+/*
+ meta on the news page
+ https://archiveofourown.org/admin_posts
+*/
+.news .meta {
+    padding: 0.25em 0.5em;
+
+    dt, dd, ul {
+        display: inline;
+        float: none;
+        margin-left: 0;
+    }
+
+    dd:not(:last-child)::after {
+        content: ' ';
+        display: block;
+        height: 0.5em;
+    }
+}
+
+/*
+ list style on the post page, like choosing archive warnings
+ https://archiveofourown.org/works/new
+*/
+.post .meta dd ul li {
+    display: block;
+}
