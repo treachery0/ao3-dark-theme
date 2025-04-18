@@ -1,6 +1,6 @@
 # AO3 Overengineered Skin
 
-#### Site skin for the AO3 website with a modern dark style. It aims to provide a pleasant experience for your eyeballs, while you read in the middle of the night instead of sleeping like a normal person.
+#### AO3 site skin with way too much effort put into it. Fully customizable and mobile friendsly.
 
 ## Usage
 
@@ -31,10 +31,6 @@ You will need to run `npm run build` again each time you make changes to a sourc
 - Rounded corners
 - Rebalanced paddings and margins
 
-## Supported browsers
-
-Any browser you would normally use, so not Internet Explorer.
-
 ## Disclaimer
 
-Not guaranteed to look perfect on all pages. If you find anything that's styled incorrectly, let me know.
+Not guaranteed to look perfect on all pages. If you find anything styled incorrectly, let me know.

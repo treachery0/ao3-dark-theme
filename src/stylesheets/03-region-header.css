@@ -1,8 +1,3 @@
-/*
- HEADER
- http://otwcode.github.com/docs/front_end_coding/patterns/supertypes
-*/
-
 /* site header */
 #header {
     font-size: 0.875em;
@@ -47,29 +42,34 @@
         position: relative;
     }
 
+    /* user actions */
     .user {
-        padding: 0.429em 0 0;
+        padding: 0.5em 0 0;
         position: relative;
         z-index: 20;
     }
 
+    /* search form */
     .search {
         float: right;
 
-        .text {
+        /* search input */
+        #site_search {
             color: var(--background);
             background: var(--foreground-lighter);
             border: none;
             outline-offset: 0;
-            margin: 0.2857em 0.429em;
+            margin: 0.25em 0.5em;
+            padding: 0.25em;
         }
 
+        /* search button */
         .button {
             color: var(--background);
             background: var(--foreground-lighter);
             border: none;
             margin: 0;
-            padding: 0.15em 0.5em;
+            padding: 0.25em 0.5em;
         }
     }
 

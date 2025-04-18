@@ -1,5 +1,5 @@
 /*
-    Define any custom styles here.
+  Define any custom styles here.
 */
 
 li.blurb {
@@ -19,12 +19,17 @@ li.blurb {
     padding: 0 0.25em 0 0.75em;
 }
 
-/* Hide delete account button */
+/* 
+  Hide delete account button.
+*/
 .user.home.profile .actions a[rel=nofollow] {
     display: none;
 }
 
-/* Hide unsubscribe buttons in list. You can still unsubscribe after clicking the user profile */
+/*
+  Hide unsubscribe buttons in list.
+  You can still unsubscribe after clicking the user profile.
+*/
 dl.subscription {
     /* increase space between links */
     dt {

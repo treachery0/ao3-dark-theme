@@ -1,7 +1,6 @@
 /*
-    Define all variables here that are used in the stylesheets.
+  Define all variables here that are used in the stylesheets.
 */
-
 :root {
     --background-darker: oklch(0.15 0.003 248);
     --background: oklch(0.20 0.003 248);
