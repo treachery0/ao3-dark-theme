@@ -21,11 +21,11 @@ jobs:
         run: npm run build
 
       - name: Zip output folder
-        run: zip -r site-skin.zip dist
+        run: cd dist && zip -r site-skin.zip *
 
       - name: Upload release
         uses: softprops/action-gh-release@v2
         with:
-          files: site-skin.zip
+          files: dist/site-skin.zip
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
