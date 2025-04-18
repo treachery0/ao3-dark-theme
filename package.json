@@ -1,7 +1,7 @@
 {
   "name": "ao3-site-skin",
   "description": "Site skin for the AO3 website, made in PostCSS for ease of customization.",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "type": "module",
   "private": true,
   "scripts": {
