@@ -14,7 +14,7 @@ ul.actions {
 }
 
 .actions a, .actions a:link, .action, .action:link, .actions button, .actions input, input[type="submit"], button, .current, .actions label {
-    color: var(--foreground-lighter);
+    color: var(--foreground-light);
     width: auto;
     font-size: 100%;
     line-height: 1.286;
@@ -26,7 +26,7 @@ ul.actions {
     overflow: visible;
     position: relative;
     text-decoration: none;
-    border: 1px solid var(--orange);
+    border: 1px solid var(--secondary);
     background: transparent;
     border-radius: 0.25em;
 }
@@ -70,22 +70,22 @@ ol.pagination, div.pagination, ol.year {
 }
 
 .actions a:hover, .actions button:hover, .actions input:hover, .actions a:focus, .actions button:focus, .actions input:focus, label.action:hover, .action:hover, .action:focus {
-    background: var(--transparent-lighten);
+    background: var(--transparent-white);
 }
 
 .actions a:active, .current, a.current, a:link.current, .current a:visited {
-    color: var(--orange-contrast);
-    background: var(--orange);
+    color: var(--secondary-contrast);
+    background: var(--secondary);
 }
 
 .actions label.disabled {
-    background: #ccc;
+    background: var(--placeholder);
 }
 
 .actions .disabled select {
     background: transparent;
-    color: #111;
-    border-color: #aaa;
+    color: var(--placeholder);
+    border-color: var(--placeholder);
 }
 
 .actions li a, .actions li button, .actions li input, .actions li input[type="submit"], .actions li .current, .actions li label {
@@ -94,7 +94,7 @@ ol.pagination, div.pagination, ol.year {
 
 .delete a, span.delete {
     border: 0;
-    color: var(--red);
+    color: var(--primary);
     font-weight: 900;
     padding: 0 0.1em 0.15em;
     border-radius: 0.875em;

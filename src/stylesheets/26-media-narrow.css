@@ -49,28 +49,6 @@ body .narrow-shown {
     }
 }
 
-/*
-#header .dropdown a:focus, #header .dropdown .menu a:focus {
-    background: transparent;
-    color: #111;
-}
-
-#header .open a:focus {
-    background: #ddd;
-}
-
-#header .primary .dropdown a:focus {
-    color: #fff;
-}
-
-#header .primary .open a:focus {
-    color: #111;
-}
-
-#header .user .open a:focus {
-    color: #900;
-}*/
-
 #header h2.collections {
     padding: 1%;
     margin: 0;

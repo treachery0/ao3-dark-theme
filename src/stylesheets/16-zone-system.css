@@ -25,8 +25,8 @@ SUBSECTIONS:
 }
 
 .splash .module h3 {
-    border-bottom: 1px solid #c8c8c8;
-    color: #900;
+    border-bottom: 1px solid var(--placeholder);
+    color: var(--placeholder);
     font-size: 1.714em;
 }
 
@@ -67,7 +67,7 @@ SUBSECTIONS:
 }
 
 .splash .browse li a:before {
-    color: #900;
+    color: var(--placeholder);
     content: "\00BB";
     padding: 0 0.25em 0 0;
 }
@@ -91,11 +91,11 @@ SUBSECTIONS:
 }
 
 .splash .favorite li:nth-of-type(odd) a {
-    background: #eee;
+    background: var(--placeholder);
 }
 
 .splash .favorite li:nth-of-type(odd) a:hover, .splash .favorite li:nth-of-type(odd) a:focus {
-    background: #900;
+    background: var(--placeholder);
 }
 
 /* module: intro */
@@ -118,8 +118,8 @@ SUBSECTIONS:
 }
 
 .splash .module div.account {
-    background: #eaeaea;
-    border: 1px solid #ccc;
+    background: var(--placeholder);
+    border: 1px solid var(--placeholder);
     border-radius: 0.5em;
     box-sizing: border-box;
 }
@@ -150,7 +150,7 @@ SUBSECTIONS:
 /* module: news */
 
 .splash .news li {
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid var(--placeholder);
 }
 
 .splash .news li:last-of-type {
@@ -316,7 +316,7 @@ For practicality, /archive_faqs are also .docs and .support and have the .userst
 }
 
 .faq .categories h3 {
-    border-bottom: 0.25em double #333;
+    border-bottom: 0.25em double var(--placeholder);
     margin-top: 1.929em;
 }
 
@@ -342,7 +342,7 @@ For practicality, /archive_faqs are also .docs and .support and have the .userst
 }
 
 .faq .example, .guideline .example {
-    border: 1px solid #c2d2df;
+    border: 1px solid var(--placeholder);
 }
 
 .faq .userstuff nav.toc {
@@ -356,7 +356,7 @@ For practicality, /archive_faqs are also .docs and .support and have the .userst
 }
 
 .tos .userstuff nav.toc > details > summary {
-    border-bottom: 0.25em double #333;
+    border-bottom: 0.25em double var(--placeholder);
 }
 
 .tos .userstuff nav.toc > details > summary h3 {
@@ -368,7 +368,7 @@ For practicality, /archive_faqs are also .docs and .support and have the .userst
 }
 
 #tos_prompt {
-    background: #fff;
+    background: var(--placeholder);
     margin: 0;
     min-height: 100vh;
     /* put it on top of the other content so it fades in nicely */
@@ -379,8 +379,8 @@ For practicality, /archive_faqs are also .docs and .support and have the .userst
 }
 
 #tos_prompt .heading {
-    background: #900;
-    color: #fff;
+    background: var(--placeholder);
+    color: var(--placeholder);
     display: block;
     margin: 0;
     padding: 0.125em 0;
@@ -423,14 +423,14 @@ For practicality, /archive_faqs are also .docs and .support and have the .userst
 }
 
 #tos_prompt [disabled] {
-    background: #ccc;
+    background: var(--placeholder);
 }
 
 /* 8. ZONE: SYSTEM: PROXY NOTICE */
 
 #proxy-notice {
-    background: #efd1d1;
-    border-bottom: 1px solid #900;
+    background: var(--placeholder);
+    border-bottom: 1px solid var(--placeholder);
     font-size: 0.875em;
 }
 

@@ -27,7 +27,7 @@ but it's probably not complete. */
 
 fieldset, form dl, fieldset dl dl, fieldset fieldset fieldset, fieldset fieldset dl dl, dd.hideme, form blockquote.userstuff {
     display: block;
-    background: var(--background-lighter);
+    background: var(--background-light);
     margin: 0.75em;
     padding: 0.75em;
 }
@@ -81,7 +81,7 @@ textarea.large {
 
 input:focus, select:focus, textarea:focus {
     outline-offset: 1px;
-    outline: 1px solid var(--orange);
+    outline: 1px solid var(--secondary);
 }
 
 input[type="radio"] + label, input[type="checkbox"] + label {
@@ -146,7 +146,7 @@ form dd + dd {
 }
 
 form dd.required {
-    color: var(--foreground-darker);
+    color: var(--foreground-dark);
 }
 
 form .footnote code {
@@ -189,19 +189,19 @@ We only use error messages for LiveValidation. Style spoofs the system error mes
 }
 
 .LV_invalid {
-    background: #efd1d1;
-    border: 1px solid var(--red);
-    color: var(--red);
+    background: var(--placeholder);
+    border: 1px solid var(--primary);
+    color: var(--primary);
     padding: 0.25em 0.375em;
     border-radius: 0.25em;
 }
 
 .LV_invalid_field, input.LV_invalid_field:hover, input.LV_invalid_field:active, textarea.LV_invalid_field:hover, textarea.LV_invalid_field:active {
-    border: 1px solid #c00;
+    border: 1px solid var(--placeholder);
 }
 
 .LV_invalid:before {
-    border-color: var(--red) transparent;
+    border-color: var(--primary) transparent;
     border-style: solid;
     border-width: 0 0.643em 0.643em;
     content: "";
@@ -213,11 +213,11 @@ We only use error messages for LiveValidation. Style spoofs the system error mes
 /* WIDGET: AUTO COMPLETE */
 
 .autocomplete div.dropdown ul {
-    background: #fff;
-    border: 1px solid #eee;
+    background: var(--placeholder);
+    border: 1px solid var(--placeholder);
     padding: 0.125em;
     line-height: 1.286;
-    color: #000;
+    color: var(--placeholder);
     display: block;
     background: rgba(255, 255, 255, 0.9);
 }
@@ -241,8 +241,8 @@ form li ul.autocomplete li.input {
 }
 
 .autocomplete .dropdown ul li:hover, .autocomplete .dropdown li.selected {
-    background: var(--red);
-    color: var(--red-contrast);
+    background: var(--primary);
+    color: var(--primary-contrast);
 }
 
 .required .autocomplete, .autocomplete .notice {
@@ -257,19 +257,32 @@ form li ul.autocomplete li.input {
     display: inline-block;
 }
 
+.autocomplete input {
+    border-radius: 0.25em;
+    margin-top: 0.5em;
+}
+
+.autocomplete li.added {
+    border-radius: 9999em;
+    background: var(--transparent-white);
+    color: var(--foreground-light);
+    margin: 0.25em;
+    padding: 0 0.25em 0 0.75em;
+}
+
 /* WIDGET: SORTABLE LIST (note: hope to merge with .sortable and .draggable etc)*/
 
 .ui-sortable li {
-    background: #eee;
-    border: 2px solid #ddd;
+    background: var(--placeholder);
+    border: 2px solid var(--placeholder);
     float: left;
     width: 100%;
     clear: both;
 }
 
 .ui-sortable li:hover {
-    background: #ddd;
-    border: 2px solid #999;
+    background: var(--placeholder);
+    border: 2px solid var(--placeholder);
     cursor: move;
 }
 
@@ -298,7 +311,7 @@ form li ul.autocomplete li.input {
 /* WIDGET: DATEPICKER, TIMEPICKER (todo, requires ARIA managed focus) */
 
 #ui-datepicker-div {
-    background: #fff;
+    background: var(--placeholder);
     display: none;
     overflow: hidden;
     padding: 0.643em;
@@ -324,19 +337,19 @@ form li ul.autocomplete li.input {
 }
 
 .ui-datepicker table {
-    background: #eee;
+    background: var(--placeholder);
 }
 
 .ui-datepicker td {
-    border: 1px solid #aaa;
+    border: 1px solid var(--placeholder);
 }
 
 .ui-datepicker tr:hover {
-    background: #ddd;
+    background: var(--placeholder);
 }
 
 .ui-datepicker td:hover {
-    background: #fff;
+    background: var(--placeholder);
 }
 
 .ui-datepicker td a {
@@ -383,8 +396,8 @@ qTip2 Copyright 2009-2010 Craig Michael Thompson - http://craigsworks.com*/
 .qtip-content {
     position: relative;
     padding: 0.15em 0.25em;
-    background: #d1e1ef;
-    border: 1px solid #c2d2df;
+    background: var(--placeholder);
+    border: 1px solid var(--placeholder);
     overflow: hidden;
     word-wrap: break-word;
 }
@@ -438,8 +451,8 @@ a.modal.help {
 }
 
 #modal {
-    background: #fff;
-    border: 10px solid #eee;
+    background: var(--background);
+    border: 1px solid var(--foreground);
     margin: 3% 0;
     max-width: 800px;
     min-width: 200px;
@@ -450,7 +463,7 @@ a.modal.help {
     z-index: 501;
 
     .content {
-        border-bottom: 1px solid #ccc;
+        border-bottom: 1px solid var(--foreground-dark);
         font-size: 0.875em;
         overflow: auto;
         padding: 1.5em;
@@ -487,7 +500,7 @@ a.modal.help {
 
     a {
         border: 0;
-        color: #fff;
+        color: var(--placeholder);
     }
 }
 
@@ -527,7 +540,7 @@ a.modal.help {
 
 #modal.img .footer {
     background: rgba(0, 0, 0, 0.6);
-    color: #fff;
+    color: var(--placeholder);
     position: fixed;
     text-align: center;
 }
@@ -545,7 +558,7 @@ a.modal.help {
 /*MODE: DYNAMIC is in early dev and so currently sharing styles with toggled */
 
 div.dynamic {
-    background: #fff;
+    background: var(--placeholder);
     position: absolute;
     z-index: 500;
 }
@@ -558,7 +571,7 @@ form.verbose legend, .verbose form legend {
     height: auto;
     width: auto;
     font-size: 100%;
-    background: var(--background-lighter);
+    background: var(--background-light);
     border: 1px solid var(--foreground);
     padding: 0.5em;
     opacity: 1;
@@ -578,7 +591,7 @@ form.simple span.actions {
 
 form.single fieldset {
     background: transparent;
-    border: 1px solid #ddd;
+    border: 1px solid var(--placeholder);
 }
 
 form.single legend {
@@ -639,8 +652,8 @@ form.single .autocomplete + input + span.submit input[type="submit"] {
 
 .toggled form, .dynamic form {
     padding: 0.5em;
-    border: 2px solid #ccc;
-    background: #fff;
+    border: 2px solid var(--placeholder);
+    background: var(--placeholder);
 }
 
 .dynamic form fieldset, .toggled form fieldset, .toggled form dl, .secondary .toggled form, .secondary form {

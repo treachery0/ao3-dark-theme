@@ -11,7 +11,7 @@ System messages use the following colours:
 
 /* We don't generally chain class selectors, but Devise's non-customizable alert class conflicts with ours, making it necessary here */
 .required, .error, .alert.flash {
-    color: var(--red-lighter);
+    color: var(--primary-light);
 }
 
 .footnote {
@@ -31,7 +31,7 @@ div.error {
 
 .notice, .comment_notice, .kudos_notice, ul.notes, .caution, .error, .comment_error, .kudos_error, .alert.flash {
     background: oklch(0.80 0.10 210);
-    color: var(--background-darker);
+    color: var(--background-dark);
     margin: 0.643em auto;
     padding: 0.25em 0.375em;
     clear: right;
@@ -93,9 +93,9 @@ alert => yellow-orange to alert users of problems or planned downtime
     position: relative;
 
     .userstuff {
-        background: #d1e1ef;
-        border: 1px solid #c2d2df;
-        color: #333;
+        background: var(--placeholder);
+        border: 1px solid var(--placeholder);
+        color: var(--placeholder);
         margin: 0 2em;
         padding: 0.375em 0.75em;
         text-align: left;
@@ -115,8 +115,8 @@ alert => yellow-orange to alert users of problems or planned downtime
 }
 
 .announcement input[type="submit"], .announcement .action {
-    background: #fff none;
-    border: 1px solid #bbb;
+    background: var(--placeholder) none;
+    border: 1px solid var(--placeholder);
     font-size: 0.875em;
     padding: 0.25em 0.5em;
     border-radius: 2em;
@@ -131,19 +131,19 @@ alert => yellow-orange to alert users of problems or planned downtime
 }
 
 .event .userstuff {
-    border-color: #600;
-    color: #fff;
-    background: #700 linear-gradient(to bottom, #700 0%, #a00 100%);
+    border-color: var(--placeholder);
+    color: var(--placeholder);
+    background: var(--placeholder);
 
     a {
-        color: #eee;
+        color: var(--placeholder);
     }
 }
 
 .alert .userstuff {
-    background: #fece3f;
-    border-color: #edb202;
-    color: #333;
+    background: var(--placeholder);
+    border-color: var(--placeholder);
+    color: var(--placeholder);
 }
 
 /* thermometer JavaScript widget for fundraising drives
@@ -159,11 +159,11 @@ progress indicator colors are set in application.js */
     position: relative;
 
     .track {
-        border: 1px solid #aaa;
+        border: 1px solid var(--placeholder);
         height: 1.25em;
         margin: 0 auto;
         position: relative;
-        background: #fff linear-gradient(to bottom, #fff 0%, #f3f3f3 50%, #ededed 51%, #fff 100%);
+        background: var(--placeholder);
     }
 
     .progress {
@@ -201,7 +201,7 @@ progress indicator colors are set in application.js */
 IN REVIEW: this block is very old (2008), a bit wonky and has an unexpected effect on blurb that needs detangling so it might change a lot*/
 
 span.symbol {
-    color: #2a547c;
+    color: var(--placeholder);
     font-family: Georgia, serif;
     border: 1px solid;
     vertical-align: super;
@@ -218,15 +218,15 @@ span.symbol {
 }
 
 .question a:hover {
-    background: #2a547c;
-    border-color: #d1e1ef;
-    color: #fff;
+    background: var(--placeholder);
+    border-color: var(--placeholder);
+    color: var(--placeholder);
     cursor: help;
 }
 
 span.question {
-    background: #d1e1ef;
-    border-color: #2a547c;
+    background: var(--placeholder);
+    border-color: var(--placeholder);
 }
 
 a.question {
@@ -249,7 +249,7 @@ dl#symbols-key dd {
 }
 
 #symbols-key dl {
-    border: 1px solid #ddd;
+    border: 1px solid var(--placeholder);
     margin-bottom: 1.286em;
     padding: 0.15em;
 }

@@ -1,25 +1,47 @@
 /*
-  Define all variables here that are used in the stylesheets.
+  Define all global variables here.
 */
 :root {
-    --background-darker: oklch(0.15 0.003 248);
-    --background: oklch(0.20 0.003 248);
-    --background-lighter: oklch(0.25 0.003 248);
+    /* background color */
+    --_background-ch: 0.003 248;
+    --background: oklch(0.20 var(--_background-ch));
+    --background-light: oklch(0.25 var(--_background-ch));
+    --background-dark: oklch(0.15 var(--_background-ch));
 
-    --foreground-darker: oklch(0.65 0.011 248);
-    --foreground: oklch(0.80 0.011 248);
-    --foreground-lighter: oklch(0.95 0.011 248);
+    /* foreground color */
+    --_foreground-ch: 0.011 248;
+    --foreground: oklch(0.80 var(--_foreground-ch));
+    --foreground-light: oklch(0.95 var(--_foreground-ch));
+    --foreground-dark: oklch(0.65 var(--_foreground-ch));
 
-    --red: oklch(0.40 0.176 29.23);
-    --red-lighter: oklch(0.60 0.176 29.23);
-    --red-contrast: var(--foreground-lighter);
+    /* primary color */
+    --_primary-ch: 0.176 29.23;
+    --primary: oklch(0.40 var(--_primary-ch));
+    --primary-light: oklch(0.60 var(--_primary-ch));
+    --primary-contrast: var(--foreground-light);
 
-    --orange: oklch(0.83 0.12 67);
-    --orange-contrast: var(--background-darker);
+    /* secondary color */
+    --_secondary-ch: 0.12 67;
+    --secondary: oklch(0.83 var(--_secondary-ch));
+    --secondary-light: oklch(0.95 var(--_secondary-ch));
+    --secondary-contrast: var(--background-dark);
 
-    --yellow: oklch(0.90 0.12 103);
-    --yellow-contrast: var(--background-darker);
+    /* special colors */
+    --_special-lc: 0.80 0.10;
+    --info: oklch(var(--_special-lc) 210);
+    --info-contrast: var(--background-dark);
+    --warning: oklch(var(--_special-lc) 80);
+    --warning-contrast: var(--background-dark);
+    --error: oklch(var(--_special-lc) 0);
+    --error-contrast: var(--background-dark);
 
-    --transparent-lighten: oklch(1 0 0 / 0.10);
-    --transparent-darken: oklch(0 0 0 / 0.10);
+    /* transparency */
+    --transparent-white: oklch(1 0 0 / 0.10);
+    --transparent-black: oklch(0 0 0 / 0.10);
+
+    /* placeholder for unassigned colors */
+    --placeholder: magenta;
+
+    /* distance unit controlling UI density */
+    --uid: 0.125em;
 }

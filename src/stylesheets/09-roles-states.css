@@ -2,13 +2,6 @@
 http://otwcode.github.com/docs/front_end_coding/patterns/modifiers
 */
 
-/*
-.own, .draft, .draft .wrapper, .unread, .child, .unwrangled, .unreviewed {
-    background: #ededed;
-    opacity: 0.95;
-}
-*/
-
 .draft {
     border: 2px dashed var(--foreground);
     padding: 0.75em;
@@ -22,8 +15,8 @@ http://otwcode.github.com/docs/front_end_coding/patterns/modifiers
 /*(these states spoof the ".navigation .current" style)*/
 
 span.unread, .replied, span.claimed, .actions span.defaulted {
-    background: #ccc;
-    color: var(--red);
+    background: var(--placeholder);
+    color: var(--primary);
     width: auto;
     line-height: 1.286;
     font-weight: 100;
@@ -37,13 +30,13 @@ span.unread, .replied, span.claimed, .actions span.defaulted {
     overflow: visible;
     position: relative;
     text-decoration: none;
-    border: 1px solid #bbb;
-    border-bottom: 1px solid #aaa;
+    border: 1px solid var(--placeholder);
+    border-bottom: 1px solid var(--placeholder);
     border-radius: 0.25em;
 }
 
 .actions span.defaulted {
-    color: #111;
+    color: var(--placeholder);
 }
 
 .canonical, li.requested {
@@ -55,25 +48,25 @@ span.unread, .replied, span.claimed, .actions span.defaulted {
 }
 
 .draggable, .droppable, span.requested, .nominations .rejected {
-    color: var(--red);
+    color: var(--primary);
 }
 
 span.offered, .replied, .nominations .approved {
-    color: #008000;
+    color: var(--placeholder);
 }
 
 .nominations {
     .approved {
-        background: #d1f0d1;
+        background: var(--placeholder);
     }
 
     .rejected {
-        background: #efd1d1;
+        background: var(--placeholder);
     }
 }
 
 span.offered.requested {
-    color: #876714;
+    color: var(--placeholder);
 }
 
 /* Arrows for the accordion widget */

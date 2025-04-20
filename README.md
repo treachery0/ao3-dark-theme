@@ -1,6 +1,6 @@
 # AO3 Overengineered Skin
 
-#### AO3 site skin with way too much effort put into it. Fully customizable and mobile friendsly.
+#### AO3 site skin with way too much effort put into it. Fully customizable and mobile friendly.
 
 ## Usage
 

@@ -15,8 +15,12 @@ li.blurb, .blurb .blurb {
     clear: left;
     padding: 0.5em 0.75em;
     overflow: visible;
-    background: var(--background-lighter);
+    background: var(--background-light);
     border-radius: 0.5em;
+}
+
+li.blurb {
+    margin: calc(8 * var(--uid)) 0;
 }
 
 li.blurb:after, .blurb .blurb:after {
@@ -54,7 +58,7 @@ li.blurb:after, .blurb .blurb:after {
     }
 
     h4 a:link, h4 img {
-        color: var(--orange);
+        color: var(--secondary);
         vertical-align: bottom;
     }
 
@@ -241,7 +245,7 @@ eg collections, users, skins, instead of the 4-icon list
 */
 
 .picture .header {
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid var(--placeholder);
 }
 
 .index .skins .icon {
@@ -282,7 +286,7 @@ blurbs on the manage collection items pages, mostly reseting styles inherited fr
 }
 
 .item dl.visibility {
-    background: #eee;
+    background: var(--placeholder);
 }
 
 /* mod: BOOKMARK */
@@ -320,10 +324,10 @@ blurbs on the manage collection items pages, mostly reseting styles inherited fr
 
     .count a {
         border-bottom: none;
-        color: #069;
+        color: var(--placeholder);
 
         &:hover, &:focus {
-            color: var(--foreground-lighter);
+            color: var(--foreground-light);
         }
     }
 
@@ -337,7 +341,7 @@ blurbs on the manage collection items pages, mostly reseting styles inherited fr
     }
 
     .user {
-        border: 1px solid #ccc;
+        border: 1px solid var(--placeholder);
         margin-top: 0.643em;
         padding: 0.429em 0.75em;
         overflow: hidden;
@@ -407,7 +411,7 @@ blurbs on the manage collection items pages, mostly reseting styles inherited fr
     }
 
     h4.viewed {
-        background: var(--background-lighter);
+        background: var(--background-light);
     }
 
     .deleted h4.viewed {

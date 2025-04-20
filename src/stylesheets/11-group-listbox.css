@@ -4,7 +4,7 @@ http://otwcode.github.com/docs/front_end_coding/patterns/listbox
 
 .listbox, fieldset fieldset.listbox {
     clear: right;
-    background: var(--background-lighter);
+    background: var(--background-light);
     border-radius: 0.5em;
     padding: 0;
     margin: 0.75em auto;
@@ -22,7 +22,7 @@ http://otwcode.github.com/docs/front_end_coding/patterns/listbox
         margin: 0;
         float: none;
         clear: right;
-        background: var(--background-lighter);
+        background: var(--background-light);
 
         &::after {
             content: " ";

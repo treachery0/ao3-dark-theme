@@ -2,12 +2,13 @@
 #header {
     font-size: 0.875em;
     font-weight: 500;
-    margin-bottom: 1em;
+    margin-bottom: calc(8 * var(--uid));
     position: relative;
 
     /* icon and brand name */
     .heading {
-        padding: 0.375em 0.375em 0.375em 2em;
+        padding: calc(3 * var(--uid));
+        padding-left: calc(16 * var(--uid));
         float: left;
 
         /* site logo */
@@ -18,7 +19,7 @@
 
         /* site title */
         a, a:visited {
-            color: var(--orange);
+            color: var(--secondary);
             font-size: 1.75em;
             line-height: 1.75em;
         }
@@ -44,7 +45,7 @@
 
     /* user actions */
     .user {
-        padding: 0.5em 0 0;
+        padding: calc(4 * var(--uid)) 0 0;
         position: relative;
         z-index: 20;
     }
@@ -56,39 +57,39 @@
         /* search input */
         #site_search {
             color: var(--background);
-            background: var(--foreground-lighter);
+            background: var(--foreground-light);
             border: none;
             outline-offset: 0;
-            margin: 0.25em 0.5em;
-            padding: 0.25em;
+            margin: calc(2 * var(--uid)) calc(4 * var(--uid));
+            padding: calc(2 * var(--uid));
         }
 
         /* search button */
         .button {
             color: var(--background);
-            background: var(--foreground-lighter);
+            background: var(--foreground-light);
             border: none;
             margin: 0;
-            padding: 0.25em 0.5em;
+            padding: calc(2 * var(--uid)) calc(4 * var(--uid));
         }
     }
 
     .primary {
-        background: var(--red);
-        padding: 0 2em;
+        background: var(--primary);
+        padding: 0 calc(16 * var(--uid));
         box-sizing: border-box;
         width: 100%;
 
         a {
             padding: 0.5em 0.75em;
-            color: var(--foreground-lighter);
+            color: var(--foreground-light);
         }
 
     }
 
     .menu {
-        background: var(--background-lighter);
-        border: 1px solid var(--transparent-lighten);
+        background: var(--background-light);
+        border: 1px solid var(--transparent-white);
         border-top: none;
         border-radius: 0 0 0.25em 0.25em;
         display: none;
@@ -97,11 +98,10 @@
         z-index: 55;
 
         li {
-            /*padding: 0 0.25em;*/
             text-align: left;
 
             a {
-                border-bottom: 1px solid var(--foreground-darker);
+                border-bottom: 1px solid var(--foreground-dark);
             }
 
             &:last-child a {
@@ -113,36 +113,68 @@
     h2 {
         border-top: 1px solid;
         clear: both;
-        color: var(--foreground-lighter);
+        color: var(--foreground-light);
         display: block;
         font-size: 1.714em;
         line-height: 1.5;
         margin: 0;
-        padding: 0 0.375em;
+        padding: 0 calc(3 * var(--uid));
         text-shadow: none;
     }
 
     .dropdown .menu a {
         background: transparent;
         display: block;
-        padding: 0.5em;
+        padding: calc(4 * var(--uid));
 
         &:hover, &:focus {
-            background: var(--transparent-lighten);
+            background: var(--transparent-white);
+        }
+    }
+
+    input, #search > *, #search .submit {
+        display: inline;
+        float: none;
+    }
+
+    a, fieldset, form, p, li, h1 {
+        background: transparent;
+        font-size: 100%;
+        border: none;
+        padding: 0;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .actions a:hover, .actions a:focus, .dropdown:hover a, .open a {
+        background: var(--background-light);
+    }
+
+    .open .menu, .dropdown:hover .menu, .menu li {
+        display: block;
+        float: none;
+    }
+
+    .user a {
+        padding: 0.25em 0.75em;
+
+        &:hover, &:focus {
+            color: var(--secondary);
+            border-radius: 0.25em;
         }
     }
 }
 
-
 #greeting {
-    padding: 0.375em 2em 0.375em 0.375em;
+    padding: calc(3 * var(--uid));
+    padding-right: calc(16 * var(--uid));
     float: right;
 
     p.icon {
         float: right;
         height: auto;
         width: auto;
-        padding-top: 0.5em;
+        padding-top: calc(4 * var(--uid));
     }
 
     img.icon {
@@ -160,113 +192,11 @@
     }
 
     .user > li {
-        margin: 0 0.125em;
-    }
-}
-
-#login {
-    float: right;
-    margin-right: 0.375em;
-}
-
-
-#header input, #header #search > *, #header #search .submit {
-    display: inline;
-    float: none;
-}
-
-/* check login and greeting; was a quick fix to remove bg */
-#header a, #header fieldset, #header form, #header p, #header li, #header h1, #small_login dl {
-    background: transparent;
-    font-size: 100%;
-    border: none;
-    padding: 0;
-    margin: 0;
-    border-radius: 0;
-}
-
-/*
-#header a, #header a:visited, #header .primary .open a, #header .primary .dropdown:hover a, #header .primary .dropdown a:focus {
-    color: var(--foreground-lighter);
-}*/
-
-#header .actions a:hover, #header .actions a:focus, #header .dropdown:hover a, #header .open a {
-    background: var(--background-lighter);
-}
-
-/*ACTION: dropdown*/
-
-#header .open .menu, #header .dropdown:hover .menu, .open + #small_login, #header .menu li {
-    display: block;
-    float: none;
-}
-
-/* login and greeting */
-
-#header .user a {
-    padding: 0.25em 0.75em;
-
-    &:hover, &:focus {
-        color: var(--orange);
-        border-radius: 0.25em;
-    }
-}
-
-#small_login .action {
-    padding: 0.25em 0.75em;
-}
-
-#login .open a:hover, #login .open a:focus {
-    background: var(--background);
-}
-
-/* square off bottom corners when the dropdown is visible */
-#greeting .open a, #greeting .dropdown:hover a {
-    border-radius: 0.25em 0.25em 0 0;
-}
-
-/* login form */
-#small_login {
-    display: none;
-    position: absolute;
-    width: 20em;
-    background: var(--background-lighter);
-    border: 2px solid var(--foreground-lighter);
-    padding: 0.375em;
-    right: 0;
-    z-index: 10;
-
-    form {
-        margin-top: 1.286em;
+        margin: 0 calc(1 * var(--uid));
     }
 
-    dt, dd {
-        margin: 0;
-        width: 99%;
+    /* square off bottom corners when the dropdown is visible */
+    .open a, .dropdown:hover a {
+        border-radius: 0.25em 0.25em 0 0;
     }
-
-    dt, .submit {
-        border-bottom: none;
-        padding: 0.375em 0 0;
-    }
-
-    .actions {
-        float: none;
-        text-align: left;
-    }
-
-    .footnote {
-        float: left;
-        font-size: 0.857em;
-        padding: 0.375em 0;
-
-        li {
-            padding: 0 0.25em;
-        }
-    }
-}
-
-.dropdown #small_login .footnote a {
-    background: transparent;
-    border-bottom: 1px solid;
 }

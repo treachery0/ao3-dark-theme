@@ -1,15 +1,15 @@
 /* style reset */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    padding: 0;
+    margin: 0;
     border: 0;
     outline: 0;
+    font-size: 100%;
     font-weight: inherit;
     font-style: inherit;
-    font-size: 100%;
     font-family: inherit;
     vertical-align: baseline;
     list-style: none;
-    margin: 0;
-    padding: 0;
 }
 
 body {
@@ -18,20 +18,14 @@ body {
     font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Helvetica, sans-serif, 'GNU Unifont';
 }
 
-a, a:link, a:visited:hover {
+a, a:link {
     color: var(--foreground);
     text-decoration: none;
     border-bottom: 1px solid;
 }
 
-a:visited {
-    color: var(--foreground-darker);
-    text-decoration: none;
-    border-bottom: 1px dashed;
-}
-
 a:hover {
-    color: var(--foreground-lighter);
+    color: var(--foreground-light);
 }
 
 a:active, a:focus, button:focus {
@@ -186,7 +180,6 @@ sup {
 /*http://otwcode.github.com/docs/front_end_coding/accessible-tables*/
 
 table {
-    background: #ddd;
     border-collapse: collapse;
     margin: auto;
     width: 100%;
@@ -203,13 +196,13 @@ caption {
 }
 
 thead, tfoot {
-    border-bottom: 2px solid #bbb;
+    border-bottom: 2px solid var(--foreground);
     padding: 0.643em;
     vertical-align: top;
 }
 
 tfoot td {
-    border-top: 1px solid #bbb;
+    border-top: 1px solid var(--foreground);
 }
 
 td th {
@@ -217,7 +210,7 @@ td th {
 }
 
 tbody tr {
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid var(--foreground);
 }
 
 td {
@@ -230,13 +223,11 @@ th {
 }
 
 thead td {
-    background: #ddd;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid var(--foreground);
 }
 
 th, tr:hover, col.name {
-    background: #fff;
-    border: 1px solid #bbb;
+    border: 1px solid var(--foreground);
     padding: 0.15em 0.5em 0.25em;
     vertical-align: top;
 }

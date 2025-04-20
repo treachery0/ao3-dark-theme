@@ -26,8 +26,8 @@ form.search input[type="text"] {
 
 /* tooltip popup */
 .search [role="tooltip"] {
-    background: var(--background-lighter);
-    border: 1px solid var(--foreground-darker);
+    background: var(--background-light);
+    border: 1px solid var(--foreground-dark);
     padding: 0.15em;
     border-radius: 0.25em;
     position: absolute;
@@ -147,7 +147,7 @@ form.filters {
 }
 
 .filters .group dt.bookmarker {
-    border-top: 1px solid #f3efec;
+    border-top: 1px solid var(--placeholder);
     margin-top: 0.643em;
     padding-top: 0.643em;
 }
@@ -181,7 +181,7 @@ form.filters {
     /* indicator checkbox */
     .indicator::before {
         color: var(--background);
-        background: var(--foreground-lighter);
+        background: var(--foreground-light);
         display: inline-block;
         margin-right: 0.25em;
         text-align: center;
@@ -193,7 +193,7 @@ form.filters {
 
     /* label when checked */
     input:checked + .indicator + span {
-        color: #008000;
+        color: var(--placeholder);
     }
 }
 
@@ -204,7 +204,7 @@ form.filters {
 }
 
 .filters [type="checkbox"]:checked + .indicator::before {
-    color: #008000;
+    color: var(--placeholder);
 }
 
 .filters [type="radio"] + .indicator:before {
@@ -216,7 +216,7 @@ form.filters {
 }
 
 .filters [type="radio"]:checked + .indicator:before {
-    background: var(--foreground-lighter);
+    background: var(--foreground-light);
 }
 
 .filters .exclude {
@@ -225,6 +225,6 @@ form.filters {
     }
 
     [type="checkbox"]:checked + .indicator:before {
-        color: #f00;
+        color: var(--placeholder);
     }
 }

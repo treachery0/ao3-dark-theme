@@ -5,6 +5,7 @@ import resolveNested from 'postcss-nested';
 import customProperties from 'postcss-custom-properties';
 import discardComments from 'postcss-discard-comments';
 import discard from 'postcss-discard';
+import resolveCalc from 'postcss-calc';
 
 export default {
     plugins: [
@@ -23,6 +24,8 @@ export default {
         customProperties({
             preserve: false
         }),
+
+        resolveCalc,
 
         // remove root selector
         discard({

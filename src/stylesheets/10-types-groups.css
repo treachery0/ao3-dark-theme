@@ -5,7 +5,7 @@ http://otwcode.github.com/docs/front_end_coding/patterns/supertypes
 /*TYPE: TAGS */
 
 a.tag {
-    color: var(--foreground-lighter);
+    color: var(--foreground-light);
     line-height: 1.5;
     text-decoration: none;
     padding: 0;
@@ -13,7 +13,7 @@ a.tag {
 }
 
 a.tag:hover, .listbox .heading a.tag:visited:hover {
-    background: var(--transparent-lighten);
+    background: var(--transparent-white);
 }
 
 .tags li {
@@ -35,7 +35,7 @@ ul.cloud {
 }
 
 ul.cloud a.tag {
-    color: var(--orange);
+    color: var(--secondary);
 }
 
 a.cloud1 {
@@ -151,7 +151,7 @@ a.work {
     font-size: 1.143em;
     font-family: Georgia, serif;
     margin: 0.5em 0;
-    color: var(--red);
+    color: var(--primary);
 }
 
 .warning, .warnings, span.byline, a.user {
@@ -159,11 +159,11 @@ a.work {
 }
 
 li.warnings a {
-    color: var(--yellow);
+    color: var(--warning);
 }
 
 .actions .reindex a {
-    border-bottom: 3px solid #900;
+    border-bottom: 3px solid var(--placeholder);
 }
 
 .series.footnote {
@@ -174,7 +174,7 @@ li.warnings a {
 /* circle dividers for series navigation on works */
 
 span.series .divider {
-    color: #777;
+    color: var(--placeholder);
 }
 
 span.series .previous + .divider:before {
@@ -228,7 +228,7 @@ dl.stats dd {
 }
 
 .statistics .index li:nth-of-type(even) {
-    background: #eee;
+    background: var(--placeholder);
 }
 
 .concise li {

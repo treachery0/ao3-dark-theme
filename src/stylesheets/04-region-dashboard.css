@@ -13,7 +13,7 @@
     }
 
     a, span {
-        color: var(--foreground-lighter);
+        color: var(--foreground-light);
         display: block;
         white-space: normal;
         height: auto;
@@ -27,7 +27,7 @@
     }
 
     a:hover {
-        background: var(--transparent-lighten);
+        background: var(--transparent-white);
     }
 
     ul {
@@ -35,7 +35,7 @@
         display: block;
         padding: 1em 0;
         text-align: right;
-        border-top: 1px solid var(--foreground-darker);
+        border-top: 1px solid var(--foreground-dark);
         position: relative;
 
         &:first-of-type {
@@ -44,8 +44,8 @@
     }
 
     .current {
-        color: var(--orange-contrast);
-        background: var(--orange);
+        color: var(--secondary-contrast);
+        background: var(--secondary);
     }
 
     .secondary {

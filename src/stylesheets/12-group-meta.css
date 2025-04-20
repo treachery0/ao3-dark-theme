@@ -6,7 +6,7 @@
 
 /* meta container */
 .meta {
-    background: var(--background-lighter);
+    background: var(--background-light);
     border-radius: 0.5em;
     padding: 1em 0.75em;
     clear: right;

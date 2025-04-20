@@ -1,0 +1,28 @@
+/*
+  Extra features that are not for everyone.
+  These may destructively alter the appearance of the page.
+*/
+
+/* 
+  Hide delete account button. For the paranoid.
+  If you insist on deleting your account, disable the site skin first.
+*/
+.user.home.profile .actions a[rel=nofollow] {
+    display: none;
+}
+
+/*
+  Hide unsubscribe buttons in subscriptions page.
+  You can still use the unsubscribe button after clicking the link.
+*/
+dl.subscription {
+    /* increase space between links */
+    dt {
+        margin-bottom: calc(6 * var(--uid));
+    }
+
+    /* hide button */
+    dd {
+        display: none;
+    }
+}

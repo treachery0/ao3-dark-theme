@@ -4,8 +4,8 @@
 */
 
 #footer {
-    background: var(--red);
-    color: var(--red-contrast);
+    background: var(--primary);
+    color: var(--primary-contrast);
     border-top: 2px solid;
     float: left;
     font-size: 0.75em;
@@ -36,7 +36,7 @@
         padding: 0;
         vertical-align: baseline;
         border-radius: 0;
-        color: var(--red-contrast);
+        color: var(--primary-contrast);
         display: inline;
         border-bottom: 1px solid;
         line-height: 1.5;
@@ -59,6 +59,6 @@
 
     .heading {
         display: block;
-        color: var(--red-contrast);
+        color: var(--primary-contrast);
     }
 }

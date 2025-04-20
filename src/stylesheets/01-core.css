@@ -16,7 +16,7 @@ body, .toggled form, .dynamic form, .secondary, .dropdown {
 }
 
 a, a:link {
-    color: var(--orange);
+    color: var(--secondary);
     text-decoration: none;
 }
 
