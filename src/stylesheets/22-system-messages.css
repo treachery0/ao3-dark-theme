@@ -131,19 +131,19 @@ alert => yellow-orange to alert users of problems or planned downtime
 }
 
 .event .userstuff {
-    border-color: var(--placeholder);
-    color: var(--placeholder);
-    background: var(--placeholder);
+    background: var(--background-light);
+    border-color: var(--foreground);
+    color: var(--foreground);
 
     a {
-        color: var(--placeholder);
+        color: var(--foreground-light);
     }
 }
 
 .alert .userstuff {
-    background: var(--placeholder);
-    border-color: var(--placeholder);
-    color: var(--placeholder);
+    background: var(--background-light);
+    border-color: var(--foreground);
+    color: var(--foreground);
 }
 
 /* thermometer JavaScript widget for fundraising drives
@@ -201,7 +201,7 @@ progress indicator colors are set in application.js */
 IN REVIEW: this block is very old (2008), a bit wonky and has an unexpected effect on blurb that needs detangling so it might change a lot*/
 
 span.symbol {
-    color: var(--placeholder);
+    color: var(--info);
     font-family: Georgia, serif;
     border: 1px solid;
     vertical-align: super;
@@ -218,15 +218,11 @@ span.symbol {
 }
 
 .question a:hover {
-    background: var(--placeholder);
-    border-color: var(--placeholder);
-    color: var(--placeholder);
     cursor: help;
 }
 
 span.question {
-    background: var(--placeholder);
-    border-color: var(--placeholder);
+    border-color: var(--info);
 }
 
 a.question {

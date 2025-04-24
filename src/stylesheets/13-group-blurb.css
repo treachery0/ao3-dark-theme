@@ -245,7 +245,7 @@ eg collections, users, skins, instead of the 4-icon list
 */
 
 .picture .header {
-    border-bottom: 1px solid var(--placeholder);
+    border-bottom: 1px solid var(--foreground);
 }
 
 .index .skins .icon {
@@ -324,7 +324,7 @@ blurbs on the manage collection items pages, mostly reseting styles inherited fr
 
     .count a {
         border-bottom: none;
-        color: var(--placeholder);
+        color: var(--foreground);
 
         &:hover, &:focus {
             color: var(--foreground-light);
@@ -341,7 +341,8 @@ blurbs on the manage collection items pages, mostly reseting styles inherited fr
     }
 
     .user {
-        border: 1px solid var(--placeholder);
+        border: 1px solid var(--foreground-dark);
+        border-radius: 0.5em;
         margin-top: 0.643em;
         padding: 0.429em 0.75em;
         overflow: hidden;

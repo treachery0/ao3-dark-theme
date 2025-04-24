@@ -147,7 +147,7 @@ form.filters {
 }
 
 .filters .group dt.bookmarker {
-    border-top: 1px solid var(--placeholder);
+    border-top: 1px solid var(--foreground);
     margin-top: 0.643em;
     padding-top: 0.643em;
 }
@@ -193,7 +193,7 @@ form.filters {
 
     /* label when checked */
     input:checked + .indicator + span {
-        color: var(--placeholder);
+        color: var(--secondary);
     }
 }
 

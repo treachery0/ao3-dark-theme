@@ -7,12 +7,14 @@
     --background: oklch(0.20 var(--_background-ch));
     --background-light: oklch(0.25 var(--_background-ch));
     --background-dark: oklch(0.15 var(--_background-ch));
+    --background-transparent: oklch(0 0 0 / 0.10);
 
     /* foreground color */
     --_foreground-ch: 0.011 248;
     --foreground: oklch(0.80 var(--_foreground-ch));
     --foreground-light: oklch(0.95 var(--_foreground-ch));
     --foreground-dark: oklch(0.65 var(--_foreground-ch));
+    --foreground-transparent: oklch(1 0 0 / 0.10);
 
     /* primary color */
     --_primary-ch: 0.176 29.23;
@@ -28,16 +30,14 @@
 
     /* special colors */
     --_special-lc: 0.80 0.10;
+    --success: oklch(var(--_special-lc) 140);
+    --success-contrast: var(--background-dark);
     --info: oklch(var(--_special-lc) 210);
     --info-contrast: var(--background-dark);
     --warning: oklch(var(--_special-lc) 80);
     --warning-contrast: var(--background-dark);
     --error: oklch(var(--_special-lc) 0);
     --error-contrast: var(--background-dark);
-
-    /* transparency */
-    --transparent-white: oklch(1 0 0 / 0.10);
-    --transparent-black: oklch(0 0 0 / 0.10);
 
     /* placeholder for unassigned colors */
     --placeholder: magenta;

@@ -197,7 +197,7 @@ We only use error messages for LiveValidation. Style spoofs the system error mes
 }
 
 .LV_invalid_field, input.LV_invalid_field:hover, input.LV_invalid_field:active, textarea.LV_invalid_field:hover, textarea.LV_invalid_field:active {
-    border: 1px solid var(--placeholder);
+    border: 1px solid var(--error);
 }
 
 .LV_invalid:before {
@@ -264,7 +264,7 @@ form li ul.autocomplete li.input {
 
 .autocomplete li.added {
     border-radius: 9999em;
-    background: var(--transparent-white);
+    background: var(--foreground-transparent);
     color: var(--foreground-light);
     margin: 0.25em;
     padding: 0 0.25em 0 0.75em;
@@ -652,8 +652,7 @@ form.single .autocomplete + input + span.submit input[type="submit"] {
 
 .toggled form, .dynamic form {
     padding: 0.5em;
-    border: 2px solid var(--placeholder);
-    background: var(--placeholder);
+    background: var(--background-light);
 }
 
 .dynamic form fieldset, .toggled form fieldset, .toggled form dl, .secondary .toggled form, .secondary form {

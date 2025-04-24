@@ -70,7 +70,7 @@ ol.pagination, div.pagination, ol.year {
 }
 
 .actions a:hover, .actions button:hover, .actions input:hover, .actions a:focus, .actions button:focus, .actions input:focus, label.action:hover, .action:hover, .action:focus {
-    background: var(--transparent-white);
+    background: var(--foreground-transparent);
 }
 
 .actions a:active, .current, a.current, a:link.current, .current a:visited {

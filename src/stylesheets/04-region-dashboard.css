@@ -27,7 +27,7 @@
     }
 
     a:hover {
-        background: var(--transparent-white);
+        background: var(--foreground-transparent);
     }
 
     ul {

@@ -89,7 +89,7 @@
 
     .menu {
         background: var(--background-light);
-        border: 1px solid var(--transparent-white);
+        border: 1px solid var(--foreground-transparent);
         border-top: none;
         border-radius: 0 0 0.25em 0.25em;
         display: none;
@@ -128,7 +128,7 @@
         padding: calc(4 * var(--uid));
 
         &:hover, &:focus {
-            background: var(--transparent-white);
+            background: var(--foreground-transparent);
         }
     }
 
@@ -160,7 +160,6 @@
 
         &:hover, &:focus {
             color: var(--secondary);
-            border-radius: 0.25em;
         }
     }
 }

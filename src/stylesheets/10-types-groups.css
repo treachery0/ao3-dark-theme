@@ -13,7 +13,7 @@ a.tag {
 }
 
 a.tag:hover, .listbox .heading a.tag:visited:hover {
-    background: var(--transparent-white);
+    background: var(--foreground-transparent);
 }
 
 .tags li {
