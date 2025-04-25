@@ -163,7 +163,7 @@ li.warnings a {
 }
 
 .actions .reindex a {
-    border-bottom: 3px solid var(--placeholder);
+    border-bottom: 3px solid var(--foreground);
 }
 
 .series.footnote {
@@ -174,7 +174,7 @@ li.warnings a {
 /* circle dividers for series navigation on works */
 
 span.series .divider {
-    color: var(--placeholder);
+    color: var(--foreground);
 }
 
 span.series .previous + .divider:before {
@@ -228,7 +228,7 @@ dl.stats dd {
 }
 
 .statistics .index li:nth-of-type(even) {
-    background: var(--placeholder);
+    background: var(--background-light);
 }
 
 .concise li {

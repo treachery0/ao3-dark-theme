@@ -30,8 +30,8 @@ div.error {
 }
 
 .notice, .comment_notice, .kudos_notice, ul.notes, .caution, .error, .comment_error, .kudos_error, .alert.flash {
-    background: oklch(0.80 0.10 210);
-    color: var(--background-dark);
+    background: var(--info);
+    color: var(--info-contrast);
     margin: 0.643em auto;
     padding: 0.25em 0.375em;
     clear: right;
@@ -40,11 +40,13 @@ div.error {
 }
 
 .caution {
-    background: oklch(0.80 0.10 80);
+    background: var(--warning);
+    color: var(--warning-contrast);
 }
 
 .error, .comment_error, .kudos_error, .alert.flash {
-    background: oklch(0.80 0.10 0);
+    background: var(--error);
+    color: var(--error-contrast);
 }
 
 p.notes {
@@ -93,9 +95,7 @@ alert => yellow-orange to alert users of problems or planned downtime
     position: relative;
 
     .userstuff {
-        background: var(--placeholder);
-        border: 1px solid var(--placeholder);
-        color: var(--placeholder);
+        background: var(--background-light);
         margin: 0 2em;
         padding: 0.375em 0.75em;
         text-align: left;
@@ -115,8 +115,8 @@ alert => yellow-orange to alert users of problems or planned downtime
 }
 
 .announcement input[type="submit"], .announcement .action {
-    background: var(--placeholder) none;
-    border: 1px solid var(--placeholder);
+    background: var(--secondary);
+    border: 1px solid var(--foreground);
     font-size: 0.875em;
     padding: 0.25em 0.5em;
     border-radius: 2em;
@@ -159,11 +159,11 @@ progress indicator colors are set in application.js */
     position: relative;
 
     .track {
-        border: 1px solid var(--placeholder);
+        border: 1px solid var(--foreground);
         height: 1.25em;
         margin: 0 auto;
         position: relative;
-        background: var(--placeholder);
+        background: var(--background-light);
     }
 
     .progress {
@@ -245,7 +245,7 @@ dl#symbols-key dd {
 }
 
 #symbols-key dl {
-    border: 1px solid var(--placeholder);
+    border: 1px solid var(--foreground);
     margin-bottom: 1.286em;
     padding: 0.15em;
 }

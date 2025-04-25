@@ -79,13 +79,13 @@ ol.pagination, div.pagination, ol.year {
 }
 
 .actions label.disabled {
-    background: var(--placeholder);
+    background: var(--background);
 }
 
 .actions .disabled select {
     background: transparent;
-    color: var(--placeholder);
-    border-color: var(--placeholder);
+    color: var(--foreground-dark);
+    border-color: var(--foreground);
 }
 
 .actions li a, .actions li button, .actions li input, .actions li input[type="submit"], .actions li .current, .actions li label {

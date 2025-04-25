@@ -189,7 +189,7 @@ We only use error messages for LiveValidation. Style spoofs the system error mes
 }
 
 .LV_invalid {
-    background: var(--placeholder);
+    background: var(--background-light);
     border: 1px solid var(--primary);
     color: var(--primary);
     padding: 0.25em 0.375em;
@@ -213,13 +213,10 @@ We only use error messages for LiveValidation. Style spoofs the system error mes
 /* WIDGET: AUTO COMPLETE */
 
 .autocomplete div.dropdown ul {
-    background: var(--placeholder);
-    border: 1px solid var(--placeholder);
+    background: var(--background);
     padding: 0.125em;
     line-height: 1.286;
-    color: var(--placeholder);
     display: block;
-    background: rgba(255, 255, 255, 0.9);
 }
 
 .autocomplete ul li {
@@ -273,16 +270,16 @@ form li ul.autocomplete li.input {
 /* WIDGET: SORTABLE LIST (note: hope to merge with .sortable and .draggable etc)*/
 
 .ui-sortable li {
-    background: var(--placeholder);
-    border: 2px solid var(--placeholder);
+    background: var(--background-light);
+    border: 2px solid var(--foreground);
     float: left;
     width: 100%;
     clear: both;
 }
 
 .ui-sortable li:hover {
-    background: var(--placeholder);
-    border: 2px solid var(--placeholder);
+    background: var(--background-light);
+    border: 2px solid var(--foreground);
     cursor: move;
 }
 
@@ -311,7 +308,7 @@ form li ul.autocomplete li.input {
 /* WIDGET: DATEPICKER, TIMEPICKER (todo, requires ARIA managed focus) */
 
 #ui-datepicker-div {
-    background: var(--placeholder);
+    background: var(--background-light);
     display: none;
     overflow: hidden;
     padding: 0.643em;
@@ -337,19 +334,19 @@ form li ul.autocomplete li.input {
 }
 
 .ui-datepicker table {
-    background: var(--placeholder);
+    background: var(--background);
 }
 
 .ui-datepicker td {
-    border: 1px solid var(--placeholder);
+    border: 1px solid var(--foreground);
 }
 
 .ui-datepicker tr:hover {
-    background: var(--placeholder);
+    background: var(--background-light);
 }
 
 .ui-datepicker td:hover {
-    background: var(--placeholder);
+    background: var(--background-light);
 }
 
 .ui-datepicker td a {
@@ -396,8 +393,8 @@ qTip2 Copyright 2009-2010 Craig Michael Thompson - http://craigsworks.com*/
 .qtip-content {
     position: relative;
     padding: 0.15em 0.25em;
-    background: var(--placeholder);
-    border: 1px solid var(--placeholder);
+    background: var(--background-light);
+    border: 1px solid var(--foreground);
     overflow: hidden;
     word-wrap: break-word;
 }
@@ -500,7 +497,7 @@ a.modal.help {
 
     a {
         border: 0;
-        color: var(--placeholder);
+        color: var(--foreground-light);
     }
 }
 
@@ -539,8 +536,6 @@ a.modal.help {
 }
 
 #modal.img .footer {
-    background: rgba(0, 0, 0, 0.6);
-    color: var(--placeholder);
     position: fixed;
     text-align: center;
 }
@@ -558,7 +553,7 @@ a.modal.help {
 /*MODE: DYNAMIC is in early dev and so currently sharing styles with toggled */
 
 div.dynamic {
-    background: var(--placeholder);
+    background: var(--background-light);
     position: absolute;
     z-index: 500;
 }
@@ -591,7 +586,7 @@ form.simple span.actions {
 
 form.single fieldset {
     background: transparent;
-    border: 1px solid var(--placeholder);
+    border: 1px solid var(--foreground);
 }
 
 form.single legend {

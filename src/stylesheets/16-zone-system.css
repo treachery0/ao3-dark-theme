@@ -89,11 +89,11 @@ SUBSECTIONS:
 }
 
 .splash .favorite li:nth-of-type(odd) a {
-    background: var(--placeholder);
+    background: var(--background);
 }
 
 .splash .favorite li:nth-of-type(odd) a:hover, .splash .favorite li:nth-of-type(odd) a:focus {
-    background: var(--placeholder);
+    background: var(--background);
 }
 
 /* module: intro */
@@ -116,8 +116,7 @@ SUBSECTIONS:
 }
 
 .splash .module div.account {
-    background: var(--placeholder);
-    border: 1px solid var(--placeholder);
+    border: 1px solid var(--foreground);
     border-radius: 0.5em;
     box-sizing: border-box;
 }
@@ -148,7 +147,7 @@ SUBSECTIONS:
 /* module: news */
 
 .splash .news li {
-    border-bottom: 1px solid var(--placeholder);
+    border-bottom: 1px solid var(--foreground);
 }
 
 .splash .news li:last-of-type {
@@ -314,7 +313,7 @@ For practicality, /archive_faqs are also .docs and .support and have the .userst
 }
 
 .faq .categories h3 {
-    border-bottom: 0.25em double var(--placeholder);
+    border-bottom: 0.25em double var(--foreground);
     margin-top: 1.929em;
 }
 
@@ -340,7 +339,7 @@ For practicality, /archive_faqs are also .docs and .support and have the .userst
 }
 
 .faq .example, .guideline .example {
-    border: 1px solid var(--placeholder);
+    border: 1px solid var(--foreground);
 }
 
 .faq .userstuff nav.toc {
@@ -354,7 +353,7 @@ For practicality, /archive_faqs are also .docs and .support and have the .userst
 }
 
 .tos .userstuff nav.toc > details > summary {
-    border-bottom: 0.25em double var(--placeholder);
+    border-bottom: 0.25em double var(--foreground);
 }
 
 .tos .userstuff nav.toc > details > summary h3 {
@@ -366,69 +365,68 @@ For practicality, /archive_faqs are also .docs and .support and have the .userst
 }
 
 #tos_prompt {
-    background: var(--placeholder);
-    margin: 0;
+    background: var(--background);
     min-height: 100vh;
-    /* put it on top of the other content so it fades in nicely */
     position: absolute;
     top: 0;
     width: 100%;
-    z-index: 999
+    z-index: 999;
+
+    .heading {
+        background: var(--primary);
+        color: var(--primary-contrast);
+        display: block;
+        margin: 0;
+        padding: 0.125em 0;
+
+        span {
+            display: block;
+            margin: auto;
+            width: 40rem;
+            max-width: 80%;
+        }
+    }
+
+    .agreement {
+        margin: auto;
+        overflow: hidden;
+        width: 40rem;
+        max-width: 80%;
+    }
+
+    p {
+        line-height: 1.4;
+
+        &:first-of-type {
+            margin: 2em 0 0.643em 0;
+        }
+    }
+
+    .confirmation {
+        margin: 2em 0 1em;
+    }
+
+    p.submit {
+        margin-bottom: 2em;
+        line-height: 1.125;
+    }
+
+    .submit input, .submit button {
+        white-space: normal;
+        height: 100%;
+    }
+
+    &[disabled] {
+        background: var(--background-light);
+    }
 }
 
-#tos_prompt .heading {
-    background: var(--placeholder);
-    color: var(--placeholder);
-    display: block;
-    margin: 0;
-    padding: 0.125em 0;
-}
-
-#tos_prompt .heading span {
-    display: block;
-    margin: auto;
-    width: 40rem;
-    max-width: 80%;
-}
-
-#tos_prompt .agreement {
-    margin: auto;
-    overflow: hidden;
-    width: 40rem;
-    max-width: 80%;
-}
-
-#tos_prompt p {
-    line-height: 1.4;
-}
-
-#tos_prompt p:first-of-type {
-    margin: 2em 0 0.643em 0;
-}
-
-#tos_prompt .confirmation {
-    margin: 2em 0 1em;
-}
-
-#tos_prompt p.submit {
-    margin-bottom: 2em;
-    line-height: 1.125;
-}
-
-#tos_prompt .submit input, #tos_prompt .submit button {
-    white-space: normal;
-    height: 100%;
-}
-
-#tos_prompt [disabled] {
-    background: var(--placeholder);
-}
 
 /* 8. ZONE: SYSTEM: PROXY NOTICE */
 
 #proxy-notice {
-    background: var(--placeholder);
-    border-bottom: 1px solid var(--placeholder);
+    background: var(--background);
+    border-bottom: 1px solid var(--foreground);
     font-size: 0.875em;
 }
 

@@ -20,7 +20,7 @@ li.blurb, .blurb .blurb {
 }
 
 li.blurb {
-    margin: calc(8 * var(--uid)) 0;
+    margin: calc(8 * var(--density)) 0;
 }
 
 li.blurb:after, .blurb .blurb:after {
@@ -286,7 +286,7 @@ blurbs on the manage collection items pages, mostly reseting styles inherited fr
 }
 
 .item dl.visibility {
-    background: var(--placeholder);
+    background: var(--background-light);
 }
 
 /* mod: BOOKMARK */

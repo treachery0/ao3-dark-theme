@@ -204,7 +204,7 @@ form.filters {
 }
 
 .filters [type="checkbox"]:checked + .indicator::before {
-    color: var(--placeholder);
+    color: var(--success);
 }
 
 .filters [type="radio"] + .indicator:before {
@@ -225,6 +225,6 @@ form.filters {
     }
 
     [type="checkbox"]:checked + .indicator:before {
-        color: var(--placeholder);
+        color: var(--error);
     }
 }

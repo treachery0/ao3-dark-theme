@@ -15,7 +15,7 @@ http://otwcode.github.com/docs/front_end_coding/patterns/modifiers
 /*(these states spoof the ".navigation .current" style)*/
 
 span.unread, .replied, span.claimed, .actions span.defaulted {
-    background: var(--placeholder);
+    background: var(--background-light);
     color: var(--primary);
     width: auto;
     line-height: 1.286;
@@ -30,13 +30,13 @@ span.unread, .replied, span.claimed, .actions span.defaulted {
     overflow: visible;
     position: relative;
     text-decoration: none;
-    border: 1px solid var(--placeholder);
-    border-bottom: 1px solid var(--placeholder);
+    border: 1px solid var(--foreground);
+    border-bottom: 1px solid var(--foreground);
     border-radius: 0.25em;
 }
 
 .actions span.defaulted {
-    color: var(--placeholder);
+    color: var(--foreground);
 }
 
 .canonical, li.requested {
@@ -52,21 +52,21 @@ span.unread, .replied, span.claimed, .actions span.defaulted {
 }
 
 span.offered, .replied, .nominations .approved {
-    color: var(--placeholder);
+    color: var(--foreground);
 }
 
 .nominations {
     .approved {
-        background: var(--placeholder);
+        background: var(--success);
     }
 
     .rejected {
-        background: var(--placeholder);
+        background: var(--error);
     }
 }
 
 span.offered.requested {
-    color: var(--placeholder);
+    color: var(--foreground);
 }
 
 /* Arrows for the accordion widget */

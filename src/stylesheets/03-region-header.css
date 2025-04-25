@@ -2,13 +2,13 @@
 #header {
     font-size: 0.875em;
     font-weight: 500;
-    margin-bottom: calc(8 * var(--uid));
+    margin-bottom: calc(8 * var(--density));
     position: relative;
 
     /* icon and brand name */
     .heading {
-        padding: calc(3 * var(--uid));
-        padding-left: calc(16 * var(--uid));
+        padding: calc(3 * var(--density));
+        padding-left: calc(16 * var(--density));
         float: left;
 
         /* site logo */
@@ -45,7 +45,7 @@
 
     /* user actions */
     .user {
-        padding: calc(4 * var(--uid)) 0 0;
+        padding: calc(4 * var(--density)) 0 0;
         position: relative;
         z-index: 20;
     }
@@ -60,8 +60,8 @@
             background: var(--foreground-light);
             border: none;
             outline-offset: 0;
-            margin: calc(2 * var(--uid)) calc(4 * var(--uid));
-            padding: calc(2 * var(--uid));
+            margin: calc(2 * var(--density)) calc(4 * var(--density));
+            padding: calc(2 * var(--density));
         }
 
         /* search button */
@@ -70,13 +70,13 @@
             background: var(--foreground-light);
             border: none;
             margin: 0;
-            padding: calc(2 * var(--uid)) calc(4 * var(--uid));
+            padding: calc(2 * var(--density)) calc(4 * var(--density));
         }
     }
 
     .primary {
         background: var(--primary);
-        padding: 0 calc(16 * var(--uid));
+        padding: 0 calc(16 * var(--density));
         box-sizing: border-box;
         width: 100%;
 
@@ -118,14 +118,14 @@
         font-size: 1.714em;
         line-height: 1.5;
         margin: 0;
-        padding: 0 calc(3 * var(--uid));
+        padding: 0 calc(3 * var(--density));
         text-shadow: none;
     }
 
     .dropdown .menu a {
         background: transparent;
         display: block;
-        padding: calc(4 * var(--uid));
+        padding: calc(4 * var(--density));
 
         &:hover, &:focus {
             background: var(--foreground-transparent);
@@ -165,15 +165,15 @@
 }
 
 #greeting {
-    padding: calc(3 * var(--uid));
-    padding-right: calc(16 * var(--uid));
+    padding: calc(3 * var(--density));
+    padding-right: calc(16 * var(--density));
     float: right;
 
     p.icon {
         float: right;
         height: auto;
         width: auto;
-        padding-top: calc(4 * var(--uid));
+        padding-top: calc(4 * var(--density));
     }
 
     img.icon {
@@ -191,7 +191,7 @@
     }
 
     .user > li {
-        margin: 0 calc(1 * var(--uid));
+        margin: 0 calc(1 * var(--density));
     }
 
     /* square off bottom corners when the dropdown is visible */

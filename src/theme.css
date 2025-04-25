@@ -39,9 +39,9 @@
     --error: oklch(var(--_special-lc) 0);
     --error-contrast: var(--background-dark);
 
-    /* placeholder for unassigned colors */
-    --placeholder: magenta;
+    /* UI density */
+    --density: 0.125em;
 
-    /* distance unit controlling UI density */
-    --uid: 0.125em;
+    /* corner roundness */
+    --roundness: 0.125em;
 }

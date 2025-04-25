@@ -18,7 +18,7 @@
 dl.subscription {
     /* increase space between links */
     dt {
-        margin-bottom: calc(6 * var(--uid));
+        margin-bottom: calc(6 * var(--density));
     }
 
     /* hide button */
