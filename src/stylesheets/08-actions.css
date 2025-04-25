@@ -28,7 +28,7 @@ ul.actions {
     text-decoration: none;
     border: 1px solid var(--secondary);
     background: transparent;
-    border-radius: 0.25em;
+    border-radius: round(2);
 }
 
 button {
@@ -97,7 +97,7 @@ ol.pagination, div.pagination, ol.year {
     color: var(--primary);
     font-weight: 900;
     padding: 0 0.1em 0.15em;
-    border-radius: 0.875em;
+    border-radius: round(7);
 }
 
 span.delete a {
@@ -127,7 +127,7 @@ h2.landmark {
     padding: 0 0.375em;
     overflow: hidden;
     right: 2.5em;
-    border-radius: 0.15em;
+    border-radius: round(1);
 }
 
 legend .action:link {

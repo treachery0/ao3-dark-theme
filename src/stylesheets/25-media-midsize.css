@@ -5,8 +5,8 @@
 #dashboard, #dashboard.own {
     border-bottom: 10px solid var(--primary);
     border-top: 10px solid var(--primary);
-    padding: 0.5em 0;
-    border-radius: 0.25em;
+    padding: density(4, 0);
+    border-radius: round(2);
 }
 
 #dashboard {
@@ -18,7 +18,7 @@
     width: auto;
 
     ul {
-        padding: 0.25em 0;
+        padding: density(2, 0);
         text-align: left;
     }
 
@@ -28,12 +28,12 @@
 
     a, span {
         display: inline-block;
-        margin: 0.25em 0;
+        margin: density(2, 0);
     }
 
     .secondary {
         background: var(--background-light);
-        padding: 0.375em 0 0.625em;
+        padding: density(3, 0, 5);
 
         a {
             margin: 0.125em 0;
@@ -109,8 +109,8 @@ form.filters {
 }
 
 form.filters dl {
-    margin-left: 0.25em;
-    margin-right: 0.25em;
+    margin-left: density(2);
+    margin-right: density(2);
 }
 
 /* 21 userstuff */

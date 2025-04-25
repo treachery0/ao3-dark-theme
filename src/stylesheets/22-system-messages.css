@@ -25,17 +25,17 @@ System messages use the following colours:
 
 div.error {
     margin: 0.643em auto;
-    padding: 0.25em 0.375em;
-    border-radius: 0.25em;
+    padding: density(2, 3);
+    border-radius: round(2);
 }
 
 .notice, .comment_notice, .kudos_notice, ul.notes, .caution, .error, .comment_error, .kudos_error, .alert.flash {
     background: var(--info);
     color: var(--info-contrast);
     margin: 0.643em auto;
-    padding: 0.25em 0.375em;
+    padding: density(2, 3);
     clear: right;
-    border-radius: 0.25em;
+    border-radius: round(2);
     word-wrap: break-word;
 }
 
@@ -55,18 +55,18 @@ p.notes {
 
 .notice p {
     margin: 0;
-    padding: 0.643em;
+    padding: density(5);
 }
 
 ul.notes, .error ul, .notice ul, .caution ul, .alert.flash ul {
     position: static;
-    margin: auto 0.643em;
-    padding: 0.25em 2.5em;
+    margin: density(auto, 5);
+    padding: density(2, 20);
 }
 
 ul.notes li, .error ul li, .notice ul li, .caution ul li, .alert.flash ul li {
     list-style-type: disc;
-    padding-left: 1.5em;
+    padding-left: density(12);
 }
 
 dt span.error, dd span.error {
@@ -96,12 +96,12 @@ alert => yellow-orange to alert users of problems or planned downtime
 
     .userstuff {
         background: var(--background-light);
-        margin: 0 2em;
-        padding: 0.375em 0.75em;
+        margin: density(0, 16);
+        padding: density(3, 6);
         text-align: left;
 
         p {
-            margin: 0.375em auto;
+            margin: density(3, auto);
         }
     }
 }
@@ -118,8 +118,8 @@ alert => yellow-orange to alert users of problems or planned downtime
     background: var(--secondary);
     border: 1px solid var(--foreground);
     font-size: 0.875em;
-    padding: 0.25em 0.5em;
-    border-radius: 2em;
+    padding: density(2, 4);
+    border-radius: round(16);
 }
 
 .announcement h1, .announcement h2, .announcement h3, .announcement h4, .announcement h5, .announcement h6 {
@@ -205,7 +205,7 @@ span.symbol {
     font-family: Georgia, serif;
     border: 1px solid;
     vertical-align: super;
-    border-radius: 0.75em;
+    border-radius: round(6);
 
     span {
         padding: 0.425em;

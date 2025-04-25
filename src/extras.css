@@ -18,11 +18,17 @@
 dl.subscription {
     /* increase space between links */
     dt {
-        margin-bottom: calc(6 * var(--density));
+        margin-bottom: density(6);
     }
 
     /* hide button */
     dd {
         display: none;
     }
+}
+
+.function-test {
+    border-radius: round(8, 6, 0, 4);
+    padding: density(4, 2);
+    margin: density(1);
 }

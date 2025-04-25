@@ -21,7 +21,7 @@ a, a:link {
 }
 
 #footer, #main, #dashboard {
-    padding: 1em 3em;
+    padding: density(8, 24);
 }
 
 .landmark {
@@ -34,15 +34,15 @@ a, a:link {
 }
 
 li.blurb, fieldset, form dl {
-    border-radius: 0.5em;
-    padding: 1em;
+    border-radius: round(4);
+    padding: density(8);
     overflow: hidden;
 }
 
 .blurb li, .actions > * {
     list-style: none;
     display: inline;
-    padding-left: 0.25em;
+    padding-left: density(2);
 }
 
 .actions form {

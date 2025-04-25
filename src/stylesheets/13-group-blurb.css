@@ -13,14 +13,14 @@ li.blurb, .blurb .blurb {
     display: block;
     position: relative;
     clear: left;
-    padding: 0.5em 0.75em;
+    padding: density(4, 6);
     overflow: visible;
     background: var(--background-light);
-    border-radius: 0.5em;
+    border-radius: round(4);
 }
 
 li.blurb {
-    margin: calc(8 * var(--density)) 0;
+    margin: density(8, 0);
 }
 
 li.blurb:after, .blurb .blurb:after {
@@ -39,12 +39,12 @@ li.blurb:after, .blurb .blurb:after {
 
     .header {
         min-height: 55px;
-        margin-bottom: 0.375em;
+        margin-bottom: density(3);
 
         .heading, ul {
             display: block;
             background: transparent;
-            margin: 0.375em 5.25em 0 65px;
+            margin: density(3, 42, 0) 65px;
         }
 
         img {
@@ -53,7 +53,7 @@ li.blurb:after, .blurb .blurb:after {
         }
 
         p.notice {
-            margin: 1.25em 0 0;
+            margin: density(10, 0, 0);
         }
     }
 
@@ -63,7 +63,7 @@ li.blurb:after, .blurb .blurb:after {
     }
 
     ul.series {
-        margin: 1.25em 0 0.875em;
+        margin: density(10, 0, 7);
     }
 
     .heading {
@@ -342,9 +342,9 @@ blurbs on the manage collection items pages, mostly reseting styles inherited fr
 
     .user {
         border: 1px solid var(--foreground-dark);
-        border-radius: 0.5em;
+        border-radius: round(4);
         margin-top: 0.643em;
-        padding: 0.429em 0.75em;
+        padding: density(4, 6);
         overflow: hidden;
 
         .meta {

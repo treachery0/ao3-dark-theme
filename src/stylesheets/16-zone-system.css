@@ -117,7 +117,7 @@ SUBSECTIONS:
 
 .splash .module div.account {
     border: 1px solid var(--foreground);
-    border-radius: 0.5em;
+    border-radius: round(4);
     box-sizing: border-box;
 }
 

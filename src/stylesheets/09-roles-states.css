@@ -5,7 +5,7 @@ http://otwcode.github.com/docs/front_end_coding/patterns/modifiers
 .draft {
     border: 2px dashed var(--foreground);
     padding: 0.75em;
-    border-radius: 0.5em;
+    border-radius: round(4);
 }
 
 #previewpane {
@@ -32,7 +32,7 @@ span.unread, .replied, span.claimed, .actions span.defaulted {
     text-decoration: none;
     border: 1px solid var(--foreground);
     border-bottom: 1px solid var(--foreground);
-    border-radius: 0.25em;
+    border-radius: round(2);
 }
 
 .actions span.defaulted {

@@ -7,7 +7,7 @@
     font-size: 0.875em;
     line-height: 1.25;
     margin: auto;
-    padding: 0.5em 2.5em 3.5em;
+    padding: density(4, 20, 28);
     position: relative;
     min-height: 450px;
 
@@ -21,12 +21,12 @@
     }
 
     &.dashboard {
-        padding-left: 2em;
-        margin: 0.5em auto 1em 14em;
+        padding-left: density(16);
+        margin: density(4, auto, 8) 14em;
     }
 
     &.home {
-        padding: 2em 7.5em 3.5em;
+        padding: density(16, 60, 28);
     }
 
     &.errors {

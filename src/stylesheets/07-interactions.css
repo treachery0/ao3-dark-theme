@@ -28,8 +28,8 @@ but it's probably not complete. */
 fieldset, form dl, fieldset dl dl, fieldset fieldset fieldset, fieldset fieldset dl dl, dd.hideme, form blockquote.userstuff {
     display: block;
     background: var(--background-light);
-    margin: 0.75em;
-    padding: 0.75em;
+    margin: density(6);
+    padding: density(6);
 }
 
 fieldset dl, fieldset.actions, fieldset dl fieldset dl {
@@ -44,7 +44,7 @@ fieldset fieldset, fieldset dl dl, form blockquote.userstuff {
 }
 
 fieldset dd dl, form .meta dd, fieldset dl fieldset dl, dd fieldset {
-    margin: 0.643em 0;
+    margin: density(6, 0);
 }
 
 /*end nesting */
@@ -59,14 +59,14 @@ legend, input[type="hidden"] {
 }
 
 label {
-    margin-right: 0.375em;
+    margin-right: density(3);
 }
 
 input, textarea {
     font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Helvetica, sans-serif, 'GNU Unifont';
     width: 100%;
     border: 1px solid var(--foreground);
-    padding: 0.25em;
+    padding: density(2);
     background: transparent;
     color: var(--foreground);
 }
@@ -92,8 +92,8 @@ select {
     color: var(--foreground);
     background: transparent;
     border: 1px solid var(--foreground);
-    border-radius: 0.25em;
-    padding: 0.25em;
+    border-radius: round(2);
+    padding: density(2);
     vertical-align: text-top;
     width: 100%;
     min-width: 10.5em;
@@ -105,7 +105,7 @@ select {
 
 input[type="radio"], input[type="checkbox"], input[type="file"], input.number, p input, p select, .heading select, li select {
     width: auto;
-    margin-right: 0.375em;
+    margin-right: density(3);
 }
 
 input.number {
@@ -119,7 +119,7 @@ option, .actions option, form code {
 form p {
     clear: right;
     margin: auto;
-    padding: 0.643em;
+    padding: density(6);
 }
 
 form dt {
@@ -127,7 +127,7 @@ form dt {
     clear: left;
     min-width: 10.5em;
     width: 25%;
-    padding: 0.25em 0.5625em 0 0;
+    padding: density(2, 4, 0, 0);
     border-bottom: 1px solid var(--foreground);
 }
 
@@ -142,7 +142,7 @@ form dd.any {
 
 form dd + dd {
     width: 97.5%;
-    margin-left: 0.5625em;
+    margin-left: density(4);
 }
 
 form dd.required {
@@ -163,7 +163,7 @@ form dd p.informational {
 
 /* WIDGET: DEPENDENT OPTIONS */
 .toggle_formfield ~ ul.dependent {
-    margin-left: 2.625em;
+    margin-left: density(21);
 }
 
 /* WIDGET: CHARACTER COUNTER (todo: ARIA live region POLITE)*/
@@ -183,7 +183,7 @@ We only use error messages for LiveValidation. Style spoofs the system error mes
 .LV_validation_message {
     font-weight: 900;
     position: absolute;
-    margin-top: 0.643em;
+    margin-top: density(6);
     margin-right: 15em;
     z-index: 1;
 }
@@ -192,8 +192,8 @@ We only use error messages for LiveValidation. Style spoofs the system error mes
     background: var(--background-light);
     border: 1px solid var(--primary);
     color: var(--primary);
-    padding: 0.25em 0.375em;
-    border-radius: 0.25em;
+    padding: density(2, 3);
+    border-radius: round(2);
 }
 
 .LV_invalid_field, input.LV_invalid_field:hover, input.LV_invalid_field:active, textarea.LV_invalid_field:hover, textarea.LV_invalid_field:active {
@@ -220,8 +220,8 @@ We only use error messages for LiveValidation. Style spoofs the system error mes
 }
 
 .autocomplete ul li {
-    padding: 0.125em;
-    margin: 0.25em auto auto;
+    padding: density(1);
+    margin: density(2, auto, auto);
 }
 
 .autocomplete input, .autocomplete .dropdown ul li {
@@ -230,7 +230,7 @@ We only use error messages for LiveValidation. Style spoofs the system error mes
 }
 
 .autocomplete .dropdown ul li {
-    margin: 0.25em 0 0;
+    margin: density(2, 0, 0);
 }
 
 form li ul.autocomplete li.input {
@@ -255,16 +255,16 @@ form li ul.autocomplete li.input {
 }
 
 .autocomplete input {
-    border-radius: 0.25em;
-    margin-top: 0.5em;
+    border-radius: round(2);
+    margin-top: density(4);
 }
 
 .autocomplete li.added {
     border-radius: 9999em;
     background: var(--foreground-transparent);
     color: var(--foreground-light);
-    margin: 0.25em;
-    padding: 0 0.25em 0 0.75em;
+    margin: density(2);
+    padding: density(0, 2, 0, 6);
 }
 
 /* WIDGET: SORTABLE LIST (note: hope to merge with .sortable and .draggable etc)*/
@@ -284,7 +284,7 @@ form li ul.autocomplete li.input {
 }
 
 .ui-sortable input {
-    margin: 0.429em 0 0.25em 0.25em;
+    margin: density(4, 0, 2, 2);
 }
 
 .ui-sortable .heading {
@@ -311,7 +311,7 @@ form li ul.autocomplete li.input {
     background: var(--background-light);
     display: none;
     overflow: hidden;
-    padding: 0.643em;
+    padding: density(6);
     font-size: 87.5%;
 }
 
@@ -326,11 +326,11 @@ form li ul.autocomplete li.input {
 .ui-datepicker dt {
     clear: left;
     width: 5em;
-    margin: 0.25em 0;
+    margin: density(2, 0);
 }
 
 .ui-datepicker dd {
-    margin: 0.25em 0;
+    margin: density(2, 0);
 }
 
 .ui-datepicker table {
@@ -368,11 +368,11 @@ a.ui-datepicker-next {
 
 .ui-timepicker-div dl {
     float: left;
-    margin: 0.643em 0;
+    margin: density(6, 0);
 }
 
 .ui_tpicker_hour_label, .ui_tpicker_minute_label {
-    padding-top: 0.25em;
+    padding-top: density(2);
     height: 1.45em;
 }
 
@@ -392,7 +392,7 @@ qTip2 Copyright 2009-2010 Craig Michael Thompson - http://craigsworks.com*/
 
 .qtip-content {
     position: relative;
-    padding: 0.15em 0.25em;
+    padding: density(2);
     background: var(--background-light);
     border: 1px solid var(--foreground);
     overflow: hidden;
@@ -463,7 +463,7 @@ a.modal.help {
         border-bottom: 1px solid var(--foreground-dark);
         font-size: 0.875em;
         overflow: auto;
-        padding: 1.5em;
+        padding: density(12);
     }
 }
 
@@ -530,7 +530,7 @@ a.modal.help {
     height: 44px;
     left: 0;
     line-height: 44px;
-    padding: 0 0.6432em;
+    padding: density(0, 5);
     right: 0;
     position: absolute;
 }
@@ -547,7 +547,7 @@ a.modal.help {
 }
 
 #modal .content > h1:first-child, #modal .content > h2:first-child, #modal .content > .heading:first-child {
-    margin-top: 0.5em;
+    margin-top: density(4);
 }
 
 /*MODE: DYNAMIC is in early dev and so currently sharing styles with toggled */
@@ -568,7 +568,7 @@ form.verbose legend, .verbose form legend {
     font-size: 100%;
     background: var(--background-light);
     border: 1px solid var(--foreground);
-    padding: 0.5em;
+    padding: density(4);
     opacity: 1;
 }
 
@@ -594,7 +594,7 @@ form.single legend {
     width: auto;
     font-size: 1.143em;
     font-weight: bold;
-    padding: 0.5em;
+    padding: density(4);
     opacity: 1;
 }
 
@@ -615,11 +615,11 @@ form.single ul.autocomplete {
 }
 
 form.single .autocomplete li.input {
-    margin: 0 0.643em 0.25em 0;
+    margin: density(0, 6, 2, 0);
 }
 
 form.single .autocomplete .added {
-    margin-bottom: 0.125em;
+    margin-bottom: density(1);
 }
 
 /* let autocomplete input expand horizontally as the container takes up more room to accomodate multiple selected tokens */
@@ -629,7 +629,7 @@ form.single .autocomplete input[type="text"] {
 
 /* tweak the margin of the submit button only if there's an autocomplete */
 form.single .autocomplete + input + span.submit input[type="submit"] {
-    margin-bottom: 0.125em;
+    margin-bottom: density(1);
 }
 
 /* WIDGET: TOGGLED FORMS (SHOW/HIDE bookmark and collection - hidden with jS) */
@@ -646,7 +646,7 @@ form.single .autocomplete + input + span.submit input[type="submit"] {
 }
 
 .toggled form, .dynamic form {
-    padding: 0.5em;
+    padding: density(4);
     background: var(--background-light);
 }
 
@@ -658,7 +658,7 @@ form.single .autocomplete + input + span.submit input[type="submit"] {
 }
 
 .toggled .bookmark form p.footnote {
-    padding-bottom: 0.643em;
+    padding-bottom: density(6);
 }
 
 /*INTERACTION: LOGIN SIGNUP*/

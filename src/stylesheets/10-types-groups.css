@@ -106,7 +106,7 @@ a.cloud8 {
 /*http://otwcode.github.com/docs/front_end_coding/patterns/pattern-index*/
 
 dl.index {
-    margin: 0.643em 0;
+    margin: density(6, 0);
     border: none;
 }
 
@@ -187,8 +187,8 @@ span.series .position + .divider:after {
 
 p.kudos {
     background: url("/images/imageset.png") no-repeat -111px -580px;
-    padding: 0.5em 0.5em 0.5em 60px;
-    margin: 2em 0;
+    padding: density(2, 2, 2) 60px;
+    margin: density(16, 0);
     min-height: 50px;
 }
 
@@ -224,7 +224,7 @@ dl.stats dd {
 }
 
 .statistics .index li {
-    padding: 0.643em 0.375em;
+    padding: density(5, 3);
 }
 
 .statistics .index li:nth-of-type(even) {
@@ -237,5 +237,3 @@ dl.stats dd {
     clear: none;
     margin-right: 1.5em
 }
-
-/*END== */

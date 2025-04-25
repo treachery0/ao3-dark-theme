@@ -2,13 +2,13 @@
 #header {
     font-size: 0.875em;
     font-weight: 500;
-    margin-bottom: calc(8 * var(--density));
+    margin-bottom: density(8);
     position: relative;
 
     /* icon and brand name */
     .heading {
-        padding: calc(3 * var(--density));
-        padding-left: calc(16 * var(--density));
+        padding: density(3);
+        padding-left: density(16);
         float: left;
 
         /* site logo */
@@ -45,7 +45,7 @@
 
     /* user actions */
     .user {
-        padding: calc(4 * var(--density)) 0 0;
+        padding: density(4, 0, 0);
         position: relative;
         z-index: 20;
     }
@@ -60,8 +60,8 @@
             background: var(--foreground-light);
             border: none;
             outline-offset: 0;
-            margin: calc(2 * var(--density)) calc(4 * var(--density));
-            padding: calc(2 * var(--density));
+            margin: density(2, 4);
+            padding: density(2);
         }
 
         /* search button */
@@ -70,18 +70,18 @@
             background: var(--foreground-light);
             border: none;
             margin: 0;
-            padding: calc(2 * var(--density)) calc(4 * var(--density));
+            padding: density(2, 4);
         }
     }
 
     .primary {
         background: var(--primary);
-        padding: 0 calc(16 * var(--density));
+        padding: density(0, 16);
         box-sizing: border-box;
         width: 100%;
 
         a {
-            padding: 0.5em 0.75em;
+            padding: density(4, 6);
             color: var(--foreground-light);
         }
 
@@ -91,7 +91,7 @@
         background: var(--background-light);
         border: 1px solid var(--foreground-transparent);
         border-top: none;
-        border-radius: 0 0 0.25em 0.25em;
+        border-radius: round(0, 0, 2, 2);
         display: none;
         position: absolute;
         width: 20em;
@@ -118,14 +118,14 @@
         font-size: 1.714em;
         line-height: 1.5;
         margin: 0;
-        padding: 0 calc(3 * var(--density));
+        padding: density(0, 3);
         text-shadow: none;
     }
 
     .dropdown .menu a {
         background: transparent;
         display: block;
-        padding: calc(4 * var(--density));
+        padding: density(4);
 
         &:hover, &:focus {
             background: var(--foreground-transparent);
@@ -156,7 +156,7 @@
     }
 
     .user a {
-        padding: 0.25em 0.75em;
+        padding: density(2, 6);
 
         &:hover, &:focus {
             color: var(--secondary);
@@ -165,15 +165,15 @@
 }
 
 #greeting {
-    padding: calc(3 * var(--density));
-    padding-right: calc(16 * var(--density));
+    padding: density(3);
+    padding-right: density(16);
     float: right;
 
     p.icon {
         float: right;
         height: auto;
         width: auto;
-        padding-top: calc(4 * var(--density));
+        padding-top: density(4);
     }
 
     img.icon {
@@ -191,11 +191,11 @@
     }
 
     .user > li {
-        margin: 0 calc(1 * var(--density));
+        margin: density(0, 1);
     }
 
     /* square off bottom corners when the dropdown is visible */
     .open a, .dropdown:hover a {
-        border-radius: 0.25em 0.25em 0 0;
+        border-radius: round(2, 2, 0, 0);
     }
 }

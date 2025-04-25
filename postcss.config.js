@@ -6,11 +6,18 @@ import customProperties from 'postcss-custom-properties';
 import discardComments from 'postcss-discard-comments';
 import discard from 'postcss-discard';
 import resolveCalc from 'postcss-calc';
+import resolveFunctions from 'postcss-functions';
+import functions from "./src/functions/variables.js";
 
 export default {
     plugins: [
         // include other stylesheets
         resolveImport,
+
+        // execute functions
+        resolveFunctions({
+            functions
+        }),
 
         // convert colors to rgb
         oklabFunction({
@@ -20,11 +27,12 @@ export default {
             }
         }),
 
-        // replace custom properties
+        // replace variables
         customProperties({
             preserve: false
         }),
 
+        // simplify calc statements
         resolveCalc,
 
         // remove root selector
