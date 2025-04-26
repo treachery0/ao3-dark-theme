@@ -7,8 +7,7 @@
 
     /* icon and brand name */
     .heading {
-        padding: density(3);
-        padding-left: density(16);
+        padding: density(3, 3, 3, 16);
         float: left;
 
         /* site logo */
@@ -18,7 +17,7 @@
         }
 
         /* site title */
-        a, a:visited {
+        a {
             color: var(--secondary);
             font-size: 1.75em;
             line-height: 1.75em;
@@ -37,17 +36,59 @@
         font-size: 0;
     }
 
-    li {
-        display: block;
+    /* navigation bar */
+    .primary {
+        background: var(--primary);
+        padding: density(0, 16);
+        width: 100%;
+
+        a {
+            padding: density(4, 6);
+            color: var(--foreground-light);
+        }
+    }
+
+    /* dropdown titles */
+    .dropdown {
         float: left;
         position: relative;
     }
 
-    /* user actions */
-    .user {
-        padding: density(4, 0, 0);
-        position: relative;
-        z-index: 20;
+    /* dropdown list */
+    .menu {
+        background: var(--background-light);
+        border: 1px solid var(--foreground-transparent);
+        border-top: none;
+        border-radius: round(0, 0, 4, 4);
+        display: none;
+        position: absolute;
+        width: 20em;
+        z-index: 55;
+
+        /* list item */
+        li {
+            text-align: left;
+
+            a {
+                border-bottom: 1px solid var(--foreground-dark);
+                display: block;
+
+                &:hover, &:focus {
+                    background: var(--foreground-transparent);
+                }
+            }
+
+            &:last-child a {
+                border-radius: round(0, 0, 4, 4);
+                border-bottom: none;
+            }
+        }
+    }
+
+    /* display dropdown when opened */
+    .open .menu, .dropdown:hover .menu {
+        display: block;
+        float: none;
     }
 
     /* search form */
@@ -60,7 +101,7 @@
             background: var(--foreground-light);
             border: none;
             outline-offset: 0;
-            margin: density(2, 4);
+            margin: density(1.5, 4);
             padding: density(2);
         }
 
@@ -71,64 +112,6 @@
             border: none;
             margin: 0;
             padding: density(2, 4);
-        }
-    }
-
-    .primary {
-        background: var(--primary);
-        padding: density(0, 16);
-        box-sizing: border-box;
-        width: 100%;
-
-        a {
-            padding: density(4, 6);
-            color: var(--foreground-light);
-        }
-
-    }
-
-    .menu {
-        background: var(--background-light);
-        border: 1px solid var(--foreground-transparent);
-        border-top: none;
-        border-radius: round(0, 0, 2, 2);
-        display: none;
-        position: absolute;
-        width: 20em;
-        z-index: 55;
-
-        li {
-            text-align: left;
-
-            a {
-                border-bottom: 1px solid var(--foreground-dark);
-            }
-
-            &:last-child a {
-                border-bottom: none;
-            }
-        }
-    }
-
-    h2 {
-        border-top: 1px solid;
-        clear: both;
-        color: var(--foreground-light);
-        display: block;
-        font-size: 1.714em;
-        line-height: 1.5;
-        margin: 0;
-        padding: density(0, 3);
-        text-shadow: none;
-    }
-
-    .dropdown .menu a {
-        background: transparent;
-        display: block;
-        padding: density(4);
-
-        &:hover, &:focus {
-            background: var(--foreground-transparent);
         }
     }
 
@@ -150,23 +133,11 @@
         background: var(--background-light);
     }
 
-    .open .menu, .dropdown:hover .menu, .menu li {
-        display: block;
-        float: none;
-    }
 
-    .user a {
-        padding: density(2, 6);
-
-        &:hover, &:focus {
-            color: var(--secondary);
-        }
-    }
 }
 
 #greeting {
-    padding: density(3);
-    padding-right: density(16);
+    padding: density(3, 16, 3, 3);
     float: right;
 
     p.icon {
@@ -190,12 +161,30 @@
         border-radius: 0;
     }
 
-    .user > li {
-        margin: density(0, 1);
-    }
-
     /* square off bottom corners when the dropdown is visible */
     .open a, .dropdown:hover a {
         border-radius: round(2, 2, 0, 0);
+    }
+
+    .user {
+        padding: density(4, 0, 0);
+        position: relative;
+        z-index: 20;
+
+        & > li {
+            margin: density(0, 2);
+        }
+
+        a {
+            padding: density(3, 6);
+
+            &:hover, &:focus {
+                color: var(--secondary);
+
+                &[rel=nofollow] {
+                    color: var(--error);
+                }
+            }
+        }
     }
 }

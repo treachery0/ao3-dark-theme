@@ -2,6 +2,12 @@
     display: inline;
 }
 
+.actions > * {
+    list-style: none;
+    display: inline;
+    padding-left: density(2);
+}
+
 ul.actions, p.actions, li.actions, span.actions, fieldset.actions, dd.actions {
     padding: 0.5em 0.25em 0.25em 0;
     float: right;
@@ -17,8 +23,7 @@ ul.actions {
     color: var(--foreground-light);
     width: auto;
     font-size: 100%;
-    line-height: 1.286;
-    height: 1.286em;
+    line-height: 1.25;
     vertical-align: middle;
     display: inline-block;
     padding: 0.25em 0.75em;
@@ -63,10 +68,6 @@ ol.pagination, div.pagination, ol.year {
     text-align: center;
     clear: right;
     margin: 0.643em auto;
-}
-
-.actions a:visited, .action:visited, .action a:link, .action a:visited {
-    color: var(--foreground);
 }
 
 .actions a:hover, .actions button:hover, .actions input:hover, .actions a:focus, .actions button:focus, .actions input:focus, label.action:hover, .action:hover, .action:focus {

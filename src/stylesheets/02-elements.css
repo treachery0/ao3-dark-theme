@@ -1,23 +1,3 @@
-/* style reset */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
-    padding: 0;
-    margin: 0;
-    border: 0;
-    outline: 0;
-    font-size: 100%;
-    font-weight: inherit;
-    font-style: inherit;
-    font-family: inherit;
-    vertical-align: baseline;
-    list-style: none;
-}
-
-body {
-    line-height: 1.125;
-    font-size: 100%;
-    font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Helvetica, sans-serif, 'GNU Unifont';
-}
-
 a, a:link {
     color: var(--foreground);
     text-decoration: none;
@@ -175,8 +155,6 @@ sup {
     line-height: 0;
 }
 
-/*http://otwcode.github.com/docs/front_end_coding/accessible-tables*/
-
 table {
     border-collapse: collapse;
     margin: auto;
@@ -230,7 +208,7 @@ th, tr:hover, col.name {
     vertical-align: top;
 }
 
-th a, th a:visited, th a:link {
+th a, th a:link {
     text-decoration: none;
 }
 

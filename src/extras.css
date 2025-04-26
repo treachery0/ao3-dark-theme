@@ -27,8 +27,9 @@ dl.subscription {
     }
 }
 
-.function-test {
-    border-radius: round(8, 6, 0, 4);
-    padding: density(4, 2);
-    margin: density(1);
+/*
+  Hide RSS feed button.
+*/
+li:has(> .rss) {
+    display: none;
 }

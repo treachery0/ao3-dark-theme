@@ -5,6 +5,12 @@
  it shows all the tags, stats and other associations we hold on that object, and sometimes it shows short user notes too, like a summary, bookmark notes, or collection description.
 */
 
+.blurb li {
+    list-style: none;
+    display: inline;
+    padding-left: density(2);
+}
+
 .blurb ul li, .blurb dd ul li {
     display: inline;
 }
