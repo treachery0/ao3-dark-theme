@@ -355,7 +355,7 @@ blurbs on the manage collection items pages, mostly reseting styles inherited fr
 
         .meta {
             display: inline;
-            font-family: Georgia, serif;
+            font-family: var(--font-serif);
             font-size: 0.875em;
             line-height: 2;
         }
@@ -435,7 +435,7 @@ blurbs on the manage collection items pages, mostly reseting styles inherited fr
 .prompt .blurb {
     h6 {
         display: inline-block;
-        font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Helvetica, sans-serif;
+        font-family: var(--font-sans);
         font-size: 1em;
         margin: 0.643em 0 0;
     }

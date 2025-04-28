@@ -1,7 +1,7 @@
 /* MEDIA: print */
 
 html, body, #main {
-    font-family: serif;
+    font-family: var(--font-serif);
 }
 
 html, body, #main, .works-show, dl.meta, .meta, .meta dd, .meta ul, .preface blockquote, .preface p, .blurb dd ul, .blurb h4, .blurb h5, .blurb .summary blockquote {
@@ -20,7 +20,7 @@ html, body, #main, .works-show, dl.meta, .meta, .meta dd, .meta ul, .preface blo
     font-variant: normal;
     font-style: normal;
     font-size: 11pt;
-    font-family: serif;
+    font-family: var(--font-serif);
     line-height: 1.2;
     margin: auto;
     text-indent: 22pt;

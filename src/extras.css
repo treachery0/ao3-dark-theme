@@ -33,3 +33,16 @@ dl.subscription {
 li:has(> .rss) {
     display: none;
 }
+
+/*
+  Force footer to bottom.
+*/
+#outer {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    #inner {
+        flex-grow: 1;
+    }
+}

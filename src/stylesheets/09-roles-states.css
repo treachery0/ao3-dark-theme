@@ -21,7 +21,7 @@ span.unread, .replied, span.claimed, .actions span.defaulted {
     line-height: 1.286;
     font-weight: 100;
     font-size: 100%;
-    font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Helvetica, sans-serif, 'GNU Unifont';
+    font-family: var(--font-sans);
     height: 1.286em;
     vertical-align: middle;
     display: inline-block;

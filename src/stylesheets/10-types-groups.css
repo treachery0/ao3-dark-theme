@@ -149,7 +149,7 @@ a.work {
     line-height: 1.125;
     font-weight: 100;
     font-size: 1.143em;
-    font-family: Georgia, serif;
+    font-family: var(--font-serif);
     margin: 0.5em 0;
     color: var(--primary);
 }

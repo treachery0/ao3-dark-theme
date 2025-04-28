@@ -22,178 +22,178 @@ SUBSECTIONS:
 .splash {
     margin: auto;
     max-width: 78em;
-}
 
-.splash .module h3 {
-    border-bottom: 1px solid var(--foreground);
-    font-size: 1.714em;
-}
+    .module h3 {
+        border-bottom: 1px solid var(--foreground);
+        font-size: 1.714em;
+    }
 
-.splash span.link {
-    float: right;
-}
+    span.link {
+        float: right;
+    }
 
-.splash .link a {
-    font-size: 0.583em;
-}
+    .link a {
+        font-size: 0.583em;
+    }
 
-.splash .browse, .splash div.news {
-    width: 36%;
-}
+    .browse, div.news {
+        width: 36%;
+    }
 
-.splash .intro, .splash .social {
-    float: right;
-    width: 60%;
-}
+    .intro, .social {
+        float: right;
+        width: 60%;
+    }
 
-.splash .browse ul, .splash .browse li {
-    float: left;
-    width: 100%;
-    box-sizing: border-box;
-}
+    .browse ul, .browse li {
+        float: left;
+        width: 100%;
+        box-sizing: border-box;
+    }
 
-.splash .browse li a, .splash .favorite a {
-    border-bottom: none;
-    display: block;
-}
+    .browse li a, .favorite a {
+        border-bottom: none;
+        display: block;
+    }
 
-/* module: browse */
+    /* module: browse */
 
-.splash .browse li {
-    margin: 0.375em 0;
-    padding: 0.375em 0;
-    width: 50%;
-}
+    .browse li {
+        margin: 0.375em 0;
+        padding: 0.375em 0;
+        width: 50%;
+    }
 
-.splash .browse li a:before {
-    content: "\00BB";
-    padding: 0 0.25em 0 0;
-}
+    .browse li a:before {
+        content: "\00BB";
+        padding: 0 0.25em 0 0;
+    }
 
-.splash .browse li:nth-of-type(1), .splash .browse li:nth-of-type(2) {
-    margin-top: 0;
-}
+    .browse li:nth-of-type(1), .browse li:nth-of-type(2) {
+        margin-top: 0;
+    }
 
-.splash .browse li:nth-of-type(odd) {
-    padding-right: 0.375em;
-}
+    .browse li:nth-of-type(odd) {
+        padding-right: 0.375em;
+    }
 
-/* module: favorite tags */
+    /* module: favorite tags */
 
-.splash .favorite li {
-    margin: 0;
-}
+    .favorite li {
+        margin: 0;
+    }
 
-.splash .favorite a {
-    padding: 0.25em 0.375em;
-}
+    .favorite a {
+        padding: 0.25em 0.375em;
+    }
 
-.splash .favorite li:nth-of-type(odd) a {
-    background: var(--background);
-}
+    .favorite li:nth-of-type(odd) a {
+        background: var(--background);
+    }
 
-.splash .favorite li:nth-of-type(odd) a:hover, .splash .favorite li:nth-of-type(odd) a:focus {
-    background: var(--background);
-}
+    .favorite li:nth-of-type(odd) a:hover, .favorite li:nth-of-type(odd) a:focus {
+        background: var(--background);
+    }
 
-/* module: intro */
+    /* module: intro */
 
-.splash .intro {
-    padding: 1em 0 2em;
-}
+    .intro {
+        padding: 1em 0 2em;
+    }
 
-.splash .intro h2 {
-    font-size: 2em;
-    line-height: 1.375;
-}
+    .intro h2 {
+        font-size: 2em;
+        line-height: 1.375;
+    }
 
-.splash .intro .stats, .splash .parent {
-    text-align: center;
-}
+    .intro .stats, .parent {
+        text-align: center;
+    }
 
-.splash .count {
-    font-weight: 700;
-}
+    .count {
+        font-weight: 700;
+    }
 
-.splash .module div.account {
-    border: 1px solid var(--foreground);
-    border-radius: round(4);
-    box-sizing: border-box;
-}
+    .module div.account {
+        border: 1px solid var(--foreground);
+        border-radius: round(4);
+        box-sizing: border-box;
+    }
 
-.splash .account .heading {
-    margin: 1em;
-}
+    .account .heading {
+        margin: 1em;
+    }
 
-.splash .account p {
-    margin-left: 1em;
-    margin-right: 1em;
-}
+    .account p {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
 
-.splash .account ul {
-    margin-left: 4em;
-    margin-right: 1em;
-}
+    .account ul {
+        margin-left: 4em;
+        margin-right: 1em;
+    }
 
-.splash .account li {
-    list-style-type: disc;
-}
+    .account li {
+        list-style-type: disc;
+    }
 
-.splash .account .actions {
-    float: none;
-    font-size: 1.143em;
-}
+    .account .actions {
+        float: none;
+        font-size: 1.143em;
+    }
 
-/* module: news */
+    /* module: news */
 
-.splash .news li {
-    border-bottom: 1px solid var(--foreground);
-}
+    .news li {
+        border-bottom: 1px solid var(--foreground);
+    }
 
-.splash .news li:last-of-type {
-    border-bottom: none;
-}
+    .news li:last-of-type {
+        border-bottom: none;
+    }
 
-.splash .news .meta {
-    font-weight: normal;
-    font-variant: normal;
-    font-style: normal;
-    font-size: 0.857em;
-    font-family: 'Monaco', 'Consolas', Courier, monospace;
-}
+    .news .meta {
+        font-weight: normal;
+        font-variant: normal;
+        font-style: normal;
+        font-size: 0.857em;
+        font-family: var(--font-mono);
+    }
 
-.splash .news blockquote {
-    float: left;
-}
+    .news blockquote {
+        float: left;
+    }
 
-.splash .jump {
-    text-align: right;
-}
+    .jump {
+        text-align: right;
+    }
 
-.splash .placeholder {
-    font-style: italic;
-}
+    .placeholder {
+        font-style: italic;
+    }
 
-/* module: marked for later */
+    /* module: marked for later */
 
-.splash .blurb blockquote {
-    margin: 0.643em auto;
-}
+    .blurb blockquote {
+        margin: 0.643em auto;
+    }
 
-/* module: unread messages */
+    /* module: unread messages */
 
-.splash .comment .userstuff {
-    margin: 1em;
-}
+    .comment .userstuff {
+        margin: 1em;
+    }
 
-/* module: social */
+    /* module: social */
 
-.splash .social ul {
-    text-align: center;
-}
+    .social ul {
+        text-align: center;
+    }
 
-.splash .social li {
-    display: inline-block;
+    .social li {
+        display: inline-block;
+    }
 }
 
 /* mod: logged-in */

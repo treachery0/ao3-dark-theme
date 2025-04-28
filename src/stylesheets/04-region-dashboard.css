@@ -1,8 +1,4 @@
-/*
- DASHBOARD
- http://otwcode.github.com/docs/front_end_coding/patterns/supertypes
-*/
-
+/* dashboard navigation */
 #dashboard {
     width: 12.5em;
     padding: density(4);

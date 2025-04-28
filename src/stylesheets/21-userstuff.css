@@ -79,10 +79,7 @@
             }
         }
     }
-}
 
-/* headings */
-.userstuff {
     h1 {
         text-align: center;
     }
@@ -112,31 +109,25 @@
         font-size: 0.975em;
         border-bottom: 1px solid;
     }
-}
 
-.userstuff h3 a, .userstuff h3 a:link, .userstuff h3 a:visited {
-    font-weight: 500;
-    border-bottom: 0;
-    text-decoration: none;
-}
+    h3 a, h3 a:link, h3 a:visited {
+        font-weight: 500;
+        border-bottom: 0;
+        text-decoration: none;
+    }
 
-/*tables */
+    caption {
+        font-size: 1em;
+        height: auto;
+        width: auto;
+        opacity: 1;
+    }
 
-.userstuff caption {
-    font-size: 1em;
-    height: auto;
-    width: auto;
-    opacity: 1;
-}
+    table, td, col, tr, thead, tfoot, tbody, th, thead td, th a, th a:link {
+        background: transparent;
+        border: none;
+    }
 
-.userstuff table, .userstuff td, .userstuff col, .userstuff tr, .userstuff thead, .userstuff tfoot, .userstuff tbody, .userstuff th, .userstuff thead td, .userstuff th a, .userstuff th a:link {
-    background: transparent;
-    border: none;
-}
-
-/* quotes and stresses */
-
-.userstuff {
     blockquote {
         line-height: 1.5;
         margin-inline-start: density(12);
@@ -165,10 +156,6 @@
     }
 }
 
-/*expected behaviours, exceptioning*/
-
-/* WORK MARGINS */
-
 #workskin {
     font-size: 1.08em;
     margin: auto;
@@ -184,7 +171,6 @@
 }
 
 /* contexts */
-
 .bookmark .user .userstuff {
     line-height: 1.5;
 

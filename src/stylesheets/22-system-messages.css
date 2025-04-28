@@ -11,7 +11,7 @@ System messages use the following colours:
 
 /* We don't generally chain class selectors, but Devise's non-customizable alert class conflicts with ours, making it necessary here */
 .required, .error, .alert.flash {
-    color: var(--primary-light);
+    color: var(--error);
 }
 
 .footnote {
@@ -20,7 +20,7 @@ System messages use the following colours:
 }
 
 .datetime {
-    font-family: monospace;
+    font-family: var(--font-mono);
 }
 
 div.error {
@@ -202,7 +202,7 @@ IN REVIEW: this block is very old (2008), a bit wonky and has an unexpected effe
 
 span.symbol {
     color: var(--info);
-    font-family: Georgia, serif;
+    font-family: var(--font-serif);
     border: 1px solid;
     vertical-align: super;
     border-radius: round(6);

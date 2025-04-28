@@ -63,7 +63,7 @@ label {
 }
 
 input, textarea {
-    font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Helvetica, sans-serif, 'GNU Unifont';
+    font-family: var(--font-sans);
     width: 100%;
     border: 1px solid var(--foreground);
     padding: density(2);
@@ -240,10 +240,6 @@ form li ul.autocomplete li.input {
 .autocomplete .dropdown ul li:hover, .autocomplete .dropdown li.selected {
     background: var(--primary);
     color: var(--primary-contrast);
-}
-
-.required .autocomplete, .autocomplete .notice {
-    color: var(--foreground);
 }
 
 .autocomplete .notice {

@@ -37,7 +37,7 @@ ul.actions {
 }
 
 button {
-    font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Helvetica, sans-serif, 'GNU Unifont';
+    font-family: var(--font-sans);
     box-sizing: content-box;
 }
 
@@ -140,7 +140,7 @@ legend .action:link {
     line-height: 1.286;
     font-weight: 100;
     font-size: 75%;
-    font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Helvetica, sans-serif, 'GNU Unifont';
+    font-family: var(--font-sans);
     padding: 0.15em 0.375em;
 }
 

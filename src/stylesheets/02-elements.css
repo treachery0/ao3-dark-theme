@@ -21,7 +21,7 @@ a:focus img {
 }
 
 h1, h2, h3, h4, h5, h6, .heading {
-    font-family: Georgia, serif;
+    font-family: var(--font-serif);
     font-weight: 400;
     word-wrap: break-word;
 }
@@ -100,8 +100,8 @@ kbd, tt, code, var, pre, samp {
     font-weight: normal;
     font-variant: normal;
     font-style: normal;
-    font-size: 0.857em;
-    font-family: 'Monaco', 'Consolas', Courier, monospace;
+    font-size: 0.875em;
+    font-family: var(--font-mono);
     margin: auto;
 }
 

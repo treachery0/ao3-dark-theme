@@ -37,7 +37,7 @@ You can't copy and paste all files into a single skin, since some styles are onl
 ### Step 3 - Create final skin
 
 1. Create a new site skin.
-2. Leave CSS empty, paste `* {}` to deal with the error.
+2. Leave CSS empty, paste `*{}` to deal with the error.
 3. Go to advanced settings.
 4. Set "What it does" to "Replace archive skin entirely".
 5. In "Parent skins", add every other previously created skin in their order in the table above.
@@ -52,6 +52,8 @@ You can't copy and paste all files into a single skin, since some styles are onl
 - Extra quality of life changes (can be disabled)
     - Hide delete account button
     - Hide unsubscribe buttons in subscriptions page
+    - Hide RSS feed button
+    - Fix footer to bottom
 
 ## Customize and build it yourself
 

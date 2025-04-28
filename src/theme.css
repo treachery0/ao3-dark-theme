@@ -19,13 +19,11 @@
     /* primary color */
     --_primary-ch: 0.176 29.23;
     --primary: oklch(0.40 var(--_primary-ch));
-    --primary-light: oklch(0.60 var(--_primary-ch));
     --primary-contrast: var(--foreground-light);
 
     /* secondary color */
     --_secondary-ch: 0.12 67;
     --secondary: oklch(0.83 var(--_secondary-ch));
-    --secondary-light: oklch(0.95 var(--_secondary-ch));
     --secondary-contrast: var(--background-dark);
 
     /* special colors */
@@ -39,9 +37,12 @@
     --error: oklch(var(--_special-lc) 0);
     --error-contrast: var(--background-dark);
 
-    /* UI density */
+    /* UI parameters */
     --density: 0.125em;
-
-    /* corner roundness */
     --roundness: 0.125em;
+
+    /* fonts */
+    --font-serif: 'Georgia', serif;
+    --font-sans: 'Lucida Grande', 'Lucida Sans Unicode', 'Verdana', 'Helvetica', sans-serif, 'GNU Unifont';
+    --font-mono: 'Monaco', 'Consolas', 'Courier', monospace;
 }
