@@ -21,6 +21,7 @@ System messages use the following colours:
 
 .datetime {
     font-family: var(--font-mono);
+    font-size: 0.75em;
 }
 
 div.error {

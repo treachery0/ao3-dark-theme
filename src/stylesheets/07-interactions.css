@@ -66,9 +66,10 @@ input, textarea {
     font-family: var(--font-sans);
     width: 100%;
     border: 1px solid var(--foreground);
+    color: var(--foreground);
+    border-radius: round(2);
     padding: density(2);
     background: transparent;
-    color: var(--foreground);
 }
 
 textarea {
@@ -190,8 +191,8 @@ We only use error messages for LiveValidation. Style spoofs the system error mes
 
 .LV_invalid {
     background: var(--background-light);
-    border: 1px solid var(--primary);
-    color: var(--primary);
+    border: 1px solid var(--error);
+    color: var(--error);
     padding: density(2, 3);
     border-radius: round(2);
 }
@@ -201,7 +202,7 @@ We only use error messages for LiveValidation. Style spoofs the system error mes
 }
 
 .LV_invalid:before {
-    border-color: var(--primary) transparent;
+    border-color: var(--error) transparent;
     border-style: solid;
     border-width: 0 0.643em 0.643em;
     content: "";
@@ -214,7 +215,8 @@ We only use error messages for LiveValidation. Style spoofs the system error mes
 
 .autocomplete div.dropdown ul {
     background: var(--background);
-    padding: 0.125em;
+    padding: density(1);
+    border: 1px solid var(--foreground-transparent);
     line-height: 1.286;
     display: block;
 }
@@ -238,29 +240,25 @@ form li ul.autocomplete li.input {
 }
 
 .autocomplete .dropdown ul li:hover, .autocomplete .dropdown li.selected {
-    background: var(--primary);
-    color: var(--primary-contrast);
+    background: var(--background-light);
 }
 
-.autocomplete .notice {
-    margin-top: 0 !important;
-}
+.autocomplete {
+    .notice {
+        margin-top: 0 !important;
+    }
 
-.autocomplete li.added, .post .meta dd ul li.added {
-    display: inline-block;
-}
+    input {
+        margin-top: density(4);
+    }
 
-.autocomplete input {
-    border-radius: round(2);
-    margin-top: density(4);
-}
-
-.autocomplete li.added {
-    border-radius: 9999em;
-    background: var(--foreground-transparent);
-    color: var(--foreground-light);
-    margin: density(2);
-    padding: density(0, 2, 0, 6);
+    li.added {
+        border-radius: round(2);
+        background: var(--foreground-transparent);
+        color: var(--foreground-light);
+        margin: density(2);
+        padding: density(0, 2, 0, 6);
+    }
 }
 
 /* WIDGET: SORTABLE LIST (note: hope to merge with .sortable and .draggable etc)*/

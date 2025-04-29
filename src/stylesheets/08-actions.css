@@ -67,7 +67,7 @@ p.submit, input.submit, dd.submit {
 ol.pagination, div.pagination, ol.year {
     text-align: center;
     clear: right;
-    margin: 0.643em auto;
+    margin: density(6, auto);
 }
 
 .actions a:hover, .actions button:hover, .actions input:hover, .actions a:focus, .actions button:focus, .actions input:focus, label.action:hover, .action:hover, .action:focus {
@@ -90,19 +90,18 @@ ol.pagination, div.pagination, ol.year {
 }
 
 .actions li a, .actions li button, .actions li input, .actions li input[type="submit"], .actions li .current, .actions li label {
-    margin: 0.375em auto;
+    margin: density(3, auto);
 }
 
-.delete a, span.delete {
+span.delete {
     border: 0;
-    color: var(--primary);
-    font-weight: 900;
-    padding: 0 0.1em 0.15em;
-    border-radius: round(7);
-}
 
-span.delete a {
-    margin: 0 0.2em;
+    a {
+        border: 0;
+        padding: density(0, 4);
+        color: var(--error);
+        font-weight: 900;
+    }
 }
 
 ul#skiplinks, .landmark, .landmark a, .index .heading.landmark {
@@ -186,7 +185,7 @@ dl.stats + .landmark + .actions, .mystery .summary + .landmark + .actions {
 }
 
 dd.any label.action {
-    margin-left: 0.5625em;
+    margin-left: density(4);
 }
 
 dl.index p.actions {

@@ -241,7 +241,7 @@ li.blurb:after, .blurb .blurb:after {
 }
 
 .blurb blockquote {
-    margin: 0.643em auto;
+    margin: density(6, auto);
     text-align: justify;
 }
 
@@ -281,7 +281,7 @@ blurbs on the manage collection items pages, mostly reseting styles inherited fr
 */
 
 .item .blurb blockquote, .item dl.stats {
-    margin: 0.643em auto;
+    margin: density(6, auto);
     padding: 0;
     border: none;
     background: transparent;
@@ -301,7 +301,7 @@ blurbs on the manage collection items pages, mostly reseting styles inherited fr
         position: absolute;
         right: 0.25em;
         width: 60px;
-        margin-top: 0.429em;
+        margin-top: density(4);
         z-index: 1;
     }
 
@@ -349,7 +349,7 @@ blurbs on the manage collection items pages, mostly reseting styles inherited fr
     .user {
         border: 1px solid var(--foreground-dark);
         border-radius: round(4);
-        margin-top: 0.643em;
+        margin-top: density(6);
         padding: density(4, 6);
         overflow: hidden;
 
@@ -377,7 +377,7 @@ blurbs on the manage collection items pages, mostly reseting styles inherited fr
     }
 
     dl.stats {
-        margin-bottom: 0.643em;
+        margin-bottom: density(6);
     }
 
     .short {
@@ -437,7 +437,7 @@ blurbs on the manage collection items pages, mostly reseting styles inherited fr
         display: inline-block;
         font-family: var(--font-sans);
         font-size: 1em;
-        margin: 0.643em 0 0;
+        margin: density(6, 0, 0);
     }
 
     ul.optional {

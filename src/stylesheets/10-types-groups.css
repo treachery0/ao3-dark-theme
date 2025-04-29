@@ -29,7 +29,7 @@ a.tag:hover, .listbox .heading a.tag:visited:hover {
 /*GROUP CLOUD */
 
 ul.cloud {
-    margin: 2em auto;
+    margin: density(16, auto);
     text-align: center;
     line-height: 2;
 }
@@ -120,8 +120,8 @@ dl.index dd {
     width: auto;
     float: none;
     clear: right;
-    margin: 0 0 1em 0;
-    padding: 0.375em 0.15em 0.15em;
+    margin: density(0, 0, 8, 0);
+    padding: density(3, 1, 1);
     overflow: visible;
 }
 
@@ -150,7 +150,7 @@ a.work {
     font-weight: 100;
     font-size: 1.143em;
     font-family: var(--font-serif);
-    margin: 0.5em 0;
+    margin: density(4, 0);
     color: var(--primary);
 }
 
@@ -215,12 +215,12 @@ p.kudos {
 dl.stats {
     text-align: right;
     background: none;
-    margin-top: 0.643em;
+    margin-top: density(6);
 }
 
 dl.stats dd {
     white-space: nowrap;
-    padding-right: 0.5em;
+    padding-right: density(4);
 }
 
 .statistics .index li {
@@ -235,5 +235,5 @@ dl.stats dd {
     width: 45%;
     float: left;
     clear: none;
-    margin-right: 1.5em
+    margin-right: density(12);
 }

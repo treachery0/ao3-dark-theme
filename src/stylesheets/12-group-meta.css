@@ -10,7 +10,6 @@
     border-radius: round(4);
     padding: density(8, 6);
     clear: right;
-    position: relative;
     overflow: hidden;
 
     /* property names */
@@ -97,4 +96,8 @@
 */
 .post .meta dd ul li {
     display: block;
+
+    &.added {
+        display: inline-block;
+    }
 }
