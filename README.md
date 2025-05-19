@@ -57,7 +57,7 @@ You can't copy and paste all files into a single skin, since some styles are onl
 
 ## Customize and build it yourself
 
-If you'd like to modify the skin, change the source files instead of the output CSS. You have easy control over all colors and other variables in `src/theme.css`. To create the output files site skins can use, make your you have Node.js 22
+If you'd like to modify the skin, change the source files instead of the output CSS. You have easy control over all colors and other variables in `src/theme.css`. To create the output files site skins can use, make sure you have Node.js 22
 installed, then run:
 
 ```

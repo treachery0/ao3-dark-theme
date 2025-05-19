@@ -47,12 +47,4 @@
     .secondary {
         right: auto;
     }
-
-    &.own {
-        background: transparent;
-        border-top: none;
-        border-bottom: none;
-        opacity: 1;
-        border-radius: round(2);
-    }
 }

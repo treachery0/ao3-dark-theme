@@ -34,11 +34,6 @@ body {
     display: none;
 }
 
-a, a:link {
-    color: var(--secondary);
-    text-decoration: none;
-}
-
 li.blurb, fieldset, form dl {
     border-radius: round(4);
     padding: density(8);

@@ -1,14 +1,18 @@
-a, a:link {
+a {
     color: var(--foreground);
     text-decoration: none;
     border-bottom: 1px solid;
+
+    &:hover {
+        color: var(--foreground-light);
+    }
+
+    &:active, &:focus {
+        outline: 1px dotted;
+    }
 }
 
-a:hover {
-    color: var(--foreground-light);
-}
-
-a:active, a:focus, button:focus {
+button:focus {
     outline: 1px dotted;
 }
 
@@ -33,20 +37,20 @@ h1 {
 }
 
 h2 {
-    font-size: 2.143em;
+    font-size: 2em;
     line-height: 1;
     margin: density(4, 0);
     display: inline;
 }
 
 h3 {
-    font-size: 1.286em;
+    font-size: 1.25em;
     line-height: 1;
     margin: density(4, 0);
 }
 
 h4 {
-    font-size: 1.143em;
+    font-size: 1.125em;
     line-height: 1.125;
     margin: density(4, 0);
 }
@@ -54,7 +58,7 @@ h4 {
 h5 {
     font-size: 1em;
     line-height: 1.286;
-    margin: density(5, 0);
+    margin: density(4, 0);
 }
 
 h6 {
@@ -185,7 +189,7 @@ td th {
     padding-right: density(8);
 }
 
-tbody tr {
+tbody tr, thead td {
     border-bottom: 1px solid var(--foreground);
 }
 
@@ -196,10 +200,6 @@ td {
 
 th {
     text-align: start;
-}
-
-thead td {
-    border-bottom: 1px solid var(--foreground);
 }
 
 th, tr:hover, col.name {

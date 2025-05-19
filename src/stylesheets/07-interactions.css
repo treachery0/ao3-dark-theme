@@ -47,8 +47,6 @@ fieldset dd dl, form .meta dd, fieldset dl fieldset dl, dd fieldset {
     margin: density(6, 0);
 }
 
-/*end nesting */
-
 legend, input[type="hidden"] {
     height: 0;
     width: 0;
@@ -128,7 +126,7 @@ form dt {
     clear: left;
     min-width: 10.5em;
     width: 25%;
-    padding: density(2, 4, 0, 0);
+    padding: density(2, 4, 1, 0);
     border-bottom: 1px solid var(--foreground);
 }
 
@@ -159,8 +157,6 @@ like the current username on the change username form */
 form dd p.informational {
     padding-top: 0;
 }
-
-/*END FORM RULES*/
 
 /* WIDGET: DEPENDENT OPTIONS */
 .toggle_formfield ~ ul.dependent {
@@ -258,6 +254,7 @@ form li ul.autocomplete li.input {
         color: var(--foreground-light);
         margin: density(2);
         padding: density(0, 2, 0, 6);
+        display: inline-block;
     }
 }
 
@@ -560,10 +557,23 @@ form.verbose legend, .verbose form legend {
     height: auto;
     width: auto;
     font-size: 100%;
-    background: var(--background-light);
-    border: 1px solid var(--foreground);
-    padding: density(4);
+    background: var(--info);
+    color: var(--info-contrast);
+    padding: density(2, 8);
+    border-radius: round(2);
     opacity: 1;
+
+    span.symbol {
+        color: var(--info-contrast);
+        border-color: var(--info-contrast);
+    }
+
+    .action {
+        padding: density(1, 6);
+        margin-left: density(4);
+        color: var(--info-contrast);
+        border-color: var(--info-contrast);
+    }
 }
 
 /*MODE: SIMPLE for forms with three or fewer fieldsets (default) */

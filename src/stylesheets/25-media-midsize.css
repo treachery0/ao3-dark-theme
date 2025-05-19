@@ -5,8 +5,8 @@
 #dashboard, #dashboard.own {
     border-bottom: 10px solid var(--primary);
     border-top: 10px solid var(--primary);
-    padding: density(4, 0);
     border-radius: round(2);
+    padding: density(4, 0);
 }
 
 #dashboard {
@@ -60,7 +60,6 @@
 
 form.single input[type="text"] {
     width: 100%;
-    box-sizing: border-box;
 }
 
 form.single input[type="submit"] {

@@ -48,7 +48,6 @@ SUBSECTIONS:
     .browse ul, .browse li {
         float: left;
         width: 100%;
-        box-sizing: border-box;
     }
 
     .browse li a, .favorite a {
@@ -117,7 +116,6 @@ SUBSECTIONS:
     .module div.account {
         border: 1px solid var(--foreground);
         border-radius: round(4);
-        box-sizing: border-box;
     }
 
     .account .heading {

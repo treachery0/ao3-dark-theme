@@ -25,11 +25,8 @@
     a {
         background: transparent;
         border: 0;
-        font-weight: 400;
         margin: auto;
-        outline: 0;
         padding: 0;
-        vertical-align: baseline;
         border-radius: 0;
         color: var(--primary-contrast);
         display: inline;

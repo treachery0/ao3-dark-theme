@@ -1,18 +1,18 @@
 function density(...values) {
-    return multipleVariable(values, '--density');
+    return multiplyVariable(values, '--density');
 }
 
 function round(...values) {
-    return multipleVariable(values, '--roundness');
+    return multiplyVariable(values, '--roundness');
 }
 
-function multipleVariable(values, variable) {
+function multiplyVariable(values, variable) {
     if (Array.isArray(values)) {
         if(values.length === 0) {
             return '0';
         }
 
-        return values.map(value => multipleVariable(value, variable)).join(' ');
+        return values.map(value => multiplyVariable(value, variable)).join(' ');
     }
 
     if (values === '0' || values === 'auto') {

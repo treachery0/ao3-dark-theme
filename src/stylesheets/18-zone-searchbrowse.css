@@ -121,7 +121,6 @@ form.filters {
         text-align: left;
         white-space: normal;
         border-radius: 0;
-        box-sizing: border-box;
 
         &:focus {
             outline: 1px dotted;

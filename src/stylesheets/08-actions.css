@@ -36,17 +36,11 @@ ul.actions {
     border-radius: round(2);
 }
 
-button {
-    font-family: var(--font-sans);
-    box-sizing: content-box;
-}
-
 label.action {
     padding: 0.15em 0.375em;
 }
 
 input[type="submit"] {
-    height: auto;
     white-space: normal;
 }
 

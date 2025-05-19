@@ -2,8 +2,6 @@
 http://otwcode.github.com/docs/front_end_coding/patterns/supertypes
 */
 
-/*TYPE: TAGS */
-
 a.tag {
     color: var(--foreground-light);
     line-height: 1.5;
@@ -138,8 +136,6 @@ dl.index dd .userstuff p {
     display: block;
 }
 
-/*TYPES*/
-
 a.rss span {
     background: url("/images/imageset.png") no-repeat -150px -275px;
     padding-left: 16px;
@@ -160,6 +156,14 @@ a.work {
 
 li.warnings a {
     color: var(--warning);
+}
+
+li.relationships a {
+    color: var(--info);
+}
+
+li.characters a {
+    color: var(--success);
 }
 
 .actions .reindex a {

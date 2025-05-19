@@ -59,6 +59,10 @@ p.notes {
     padding: density(5);
 }
 
+.notice a {
+    color: unset;
+}
+
 ul.notes, .error ul, .notice ul, .caution ul, .alert.flash ul {
     position: static;
     margin: density(auto, 5);
@@ -197,16 +201,12 @@ progress indicator colors are set in application.js */
     }
 }
 
-
-/* SYMBOLS (mostly help button, arguably an action but hey ho);
-IN REVIEW: this block is very old (2008), a bit wonky and has an unexpected effect on blurb that needs detangling so it might change a lot*/
-
 span.symbol {
     color: var(--info);
     font-family: var(--font-serif);
     border: 1px solid;
-    vertical-align: super;
     border-radius: round(6);
+    font-size: 0.9em;
 
     span {
         padding: 0.425em;
@@ -235,8 +235,6 @@ a.question {
     font-size: 0.75em;
 }
 
-/*SYMBOLS KEY (help content) */
-
 dl#symbols-key dt {
     width: 100px;
 }
@@ -259,5 +257,3 @@ dl#symbols-key dd {
 #symbols-key dl dd, #bookmark-symbols-key dd {
     margin: -25px auto 20px 35px;
 }
-
-/*END== */

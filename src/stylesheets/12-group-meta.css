@@ -99,5 +99,9 @@
 
     &.added {
         display: inline-block;
+
+        &:first-child {
+            padding-left: density(6);
+        }
     }
 }
