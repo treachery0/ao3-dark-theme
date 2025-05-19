@@ -4,7 +4,7 @@ AO3 site skin with way too much effort put into it. Fully customizable and mobil
 
 This skin replaces the default site skin instead of building on top of it, which gives more freedom for customization, but the installation process becomes much harder than a simple copy and paste.
 
-It would be arguably easier if I could make a public site skin you can use directly, but can't have that, can we, AO3 devs? So you'll have to set this up yourself. Below are the detailed steps on how to do so.
+It would arguably be easier if I could make a public site skin you could use directly, but that's currently impossible due to AO3 removing this option in like 2011, and not touching it ever since. So you'll have to set this up yourself. Below are the detailed steps on how to do so.
 
 ## Installation
 
@@ -57,7 +57,7 @@ You can't copy and paste all files into a single skin, since some styles are onl
 
 ## Customize and build it yourself
 
-If you'd like to modify the skin, change the source files instead of the output CSS. You have easy control over all colors and other variables in `src/theme.css`. To create the output files site skins can use, make sure you have Node.js 22
+If you'd like to modify the skin, change the source files instead of the output CSS. You have easy control over all colors and other variables in `src/theme.css`. To create the output files site skins can use, make sure you have Node.js 22+
 installed, then run:
 
 ```
