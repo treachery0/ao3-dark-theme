@@ -46,3 +46,15 @@ li:has(> .rss) {
         flex-grow: 1;
     }
 }
+
+/*
+  Username decoration.
+*/
+.dashboard .home .header h2 {
+    font-family: revert;
+    color: var(--foreground-light);
+
+    &::before, &::after {
+        content: "✨";
+    }
+}

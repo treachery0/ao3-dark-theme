@@ -1,26 +1,24 @@
-/*==ZONE: HOME 
-user home, collections and challenges home, tag home, admin comms home 
---this zone always shows a dashboard styled in region-dashboard and its parent is #main.dashboard */
-
-.home p, .home .header {
+.home .header {
     clear: right;
-}
 
-.home .header h2 {
-    text-align: right;
-    border-bottom: 2px solid;
-    display: block;
-    margin-left: 100px;
-}
+    h2 {
+        text-align: right;
+        display: block;
+        margin-left: 100px;
+        margin-right: density(2);
+    }
 
-.home .header .userstuff, .home .header dl.stats, .home .header .type {
-    clear: right;
-    margin-left: 120px;
-}
+    .userstuff, dl.stats, .type {
+        clear: right;
+        margin-left: 120px;
+    }
 
-.home .header ul.actions {
-    margin-bottom: density(6);
-    padding-top: 0;
+    ul.actions {
+        margin-bottom: density(6);
+        margin-left: 100px;
+        padding-top: 0;
+        text-align: right;
+    }
 }
 
 .admin .header h3 {
@@ -29,6 +27,7 @@ user home, collections and challenges home, tag home, admin comms home
 }
 
 .home .primary {
+    float: none;
     margin: density(0, 0, 6);
     min-height: 100px;
 }

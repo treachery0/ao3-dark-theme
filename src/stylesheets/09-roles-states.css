@@ -15,23 +15,16 @@ http://otwcode.github.com/docs/front_end_coding/patterns/modifiers
 /*(these states spoof the ".navigation .current" style)*/
 
 span.unread, .replied, span.claimed, .actions span.defaulted {
-    background: var(--background-light);
-    color: var(--primary);
+    color: var(--foreground-light);
     width: auto;
-    line-height: 1.286;
-    font-weight: 100;
-    font-size: 100%;
-    font-family: var(--font-sans);
-    height: 1.286em;
+    line-height: 1.25;
     vertical-align: middle;
     display: inline-block;
     padding: 0.25em 0.75em;
     white-space: nowrap;
     overflow: visible;
     position: relative;
-    text-decoration: none;
-    border: 1px solid var(--foreground);
-    border-bottom: 1px solid var(--foreground);
+    border: 1px solid var(--secondary);
     border-radius: round(2);
 }
 

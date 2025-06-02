@@ -4,16 +4,20 @@ http://otwcode.github.com/docs/front_end_coding/patterns/listbox
 
 .listbox, fieldset fieldset.listbox {
     clear: right;
-    background: var(--background-light);
     border-radius: round(4);
     padding: 0;
-    margin: density(6, auto);
+    margin: density(12, auto);
     overflow: hidden;
 }
 
 .listbox {
-    .heading {
-        display: inline-block;
+    & > .heading {
+        display: block;
+        margin: 0;
+        padding: density(2, 4);
+        background: var(--primary);
+        color: var(--primary-contrast);
+        font-family: revert;
     }
 
     .index {
@@ -34,10 +38,18 @@ http://otwcode.github.com/docs/front_end_coding/patterns/listbox
         }
     }
 
-    & > .heading, & .heading a:visited {
-        margin: 0;
-        color: var(--foreground);
-        padding: density(2);
+    /*INTERACTION context (show many/more/lots)*/
+
+    .options {
+        overflow: auto;
+    }
+
+    .all {
+        height: auto;
+    }
+
+    .many {
+        max-height: 12em;
     }
 }
 
@@ -63,20 +75,4 @@ http://otwcode.github.com/docs/front_end_coding/patterns/listbox
 .review .listbox {
     overflow: visible;
     position: static;
-}
-
-/*INTERACTION context (show many/more/lots)*/
-
-.listbox {
-    .options {
-        overflow: auto;
-    }
-
-    .all {
-        height: auto;
-    }
-
-    .many {
-        max-height: 12em;
-    }
 }

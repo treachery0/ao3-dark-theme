@@ -341,20 +341,20 @@ blurbs on the manage collection items pages, mostly reseting styles inherited fr
         top: 28px;
     }
 
-    div.user {
+    .user {
         clear: right;
     }
 
     .user {
         border: 1px solid var(--foreground-dark);
-        border-radius: round(4);
+        border-radius: round(2);
         margin-top: density(6);
         padding: density(4, 6);
         overflow: hidden;
 
         .meta {
+            background: transparent;
             display: inline;
-            font-family: var(--font-serif);
             font-size: 0.875em;
             line-height: 2;
         }
@@ -366,8 +366,8 @@ blurbs on the manage collection items pages, mostly reseting styles inherited fr
         }
 
         .byline {
-            margin-top: 0.375em;
-            margin-right: 5.25em;
+            margin-top: 0;
+            margin-right: 6em;
         }
     }
 
@@ -405,8 +405,8 @@ blurbs on the manage collection items pages, mostly reseting styles inherited fr
     }
 
     div.user .datetime {
-        top: 0.875em;
-        right: 0.875em;
+        top: 1.25em;
+        right: 0.75em;
     }
 }
 
