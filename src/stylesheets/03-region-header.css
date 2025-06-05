@@ -44,7 +44,10 @@
 
         a {
             padding: density(4, 6);
-            color: var(--color-base-content);
+        }
+
+        .dropdown-toggle {
+            color: var(--color-primary-content);
         }
     }
 
@@ -131,9 +134,8 @@
 
     .actions a:hover, .actions a:focus, .dropdown:hover a, .open a {
         background: var(--color-base-300);
+        color: var(--color-base-content);
     }
-
-
 }
 
 #greeting {

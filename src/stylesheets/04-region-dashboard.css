@@ -2,6 +2,8 @@
 #dashboard {
     width: 12.5em;
     padding: density(4);
+    border-color: var(--color-primary);
+    border-style: solid;
     float: left;
 
     li {

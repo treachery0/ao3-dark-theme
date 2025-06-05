@@ -70,7 +70,7 @@ body .narrow-shown {
 
 /* 04 region dashboard */
 
-#dashboard, #dashboard.own {
+#dashboard {
     border-bottom-width: 7px;
     border-top-width: 7px;
     padding: density(2, 0);

@@ -4,28 +4,26 @@
 */
 :root {
     /* colors */
-    --color-base-100: oklch(0.15 0.003 248);
-    --color-base-200: oklch(0.20 0.003 248);
-    --color-base-300: oklch(0.25 0.003 248);
-    --color-base-content: oklch(0.85 0.003 248);
-
-    --color-primary: oklch(0.40 0.176 29.23);
-    --color-primary-content: var(--color-base-content);
-    --color-secondary: oklch(0.80 0.12 75);
-    --color-secondary-content: var(--color-base-100);
-    --color-accent: oklch(0.71 0.16 300);
-    --color-accent-content: var(--color-base-100);
-    --color-neutral: oklch(0.40 0.003 248);
-    --color-neutral-content: var(--color-base-content);
-
-    --color-success: oklch(0.80 0.10 140);
-    --color-success-content: var(--color-base-100);
-    --color-info: oklch(0.80 0.10 210);
-    --color-info-content: var(--color-base-100);
-    --color-warning: oklch(0.80 0.10 80);
-    --color-warning-content: var(--color-base-100);
-    --color-error: oklch(0.80 0.10 0);
-    --color-error-content: var(--color-base-100);
+    --color-base-100: oklch(16% 0.005 240);
+    --color-base-200: oklch(20% 0.005 240);
+    --color-base-300: oklch(24% 0.005 240);
+    --color-base-content: oklch(88% 0.005 245);
+    --color-primary: oklch(40% 0.176 29.23);
+    --color-primary-content: oklch(88% 0.005 245);
+    --color-secondary: oklch(75% 0.12 75);
+    --color-secondary-content: oklch(14% 0.035 2.72);
+    --color-accent: oklch(71% 0.166 300);
+    --color-accent-content: oklch(14% 0.033 300);
+    --color-neutral: oklch(27% 0.01 240);
+    --color-neutral-content: oklch(70% 0.01 240);
+    --color-info: oklch(85% 0.085 206);
+    --color-info-content: oklch(17% 0.017 206);
+    --color-success: oklch(85% 0.085 145);
+    --color-success-content: oklch(17% 0.015 145);
+    --color-warning: oklch(85% 0.085 75);
+    --color-warning-content: oklch(17% 0.015 75);
+    --color-error: oklch(85% 0.085 16);
+    --color-error-content: oklch(17% 0.015 16);
 
     /* ui parameters */
     --ui-density: 0.125rem;
