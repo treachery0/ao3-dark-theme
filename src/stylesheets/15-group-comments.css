@@ -10,7 +10,7 @@
 
 /* comment container */
 .comment {
-    background: var(--background-light);
+    background: var(--color-base-300);
     position: relative;
     border-radius: round(4);
     overflow: visible;

@@ -1,10 +1,10 @@
 a {
-    color: var(--foreground);
+    color: var(--color-base-content);
     text-decoration: none;
     border-bottom: 1px solid;
 
     &:hover {
-        color: var(--foreground-light);
+        color: var(--color-base-content);
     }
 
     &:active, &:focus {
@@ -176,13 +176,13 @@ caption {
 }
 
 thead, tfoot {
-    border-bottom: 2px solid var(--foreground);
+    border-bottom: 2px solid var(--color-base-content);
     padding: density(5);
     vertical-align: top;
 }
 
 tfoot td {
-    border-top: 1px solid var(--foreground);
+    border-top: 1px solid var(--color-base-content);
 }
 
 td th {
@@ -190,7 +190,7 @@ td th {
 }
 
 tbody tr, thead td {
-    border-bottom: 1px solid var(--foreground);
+    border-bottom: 1px solid var(--color-base-content);
 }
 
 td {
@@ -203,7 +203,7 @@ th {
 }
 
 th, tr:hover, col.name {
-    border: 1px solid var(--foreground);
+    border: 1px solid var(--color-base-content);
     padding: density(2, 4, 2);
     vertical-align: top;
 }

@@ -26,8 +26,8 @@ form.search input[type="text"] {
 
 /* tooltip popup */
 .search [role="tooltip"] {
-    background: var(--background-light);
-    border: 1px solid var(--foreground-dark);
+    background: var(--color-base-300);
+    border: 1px solid var(--color-base-content);
     padding: 0.15em;
     border-radius: round(2);
     position: absolute;
@@ -146,7 +146,7 @@ form.filters {
 }
 
 .filters .group dt.bookmarker {
-    border-top: 1px solid var(--foreground);
+    border-top: 1px solid var(--color-base-content);
     margin-top: density(5);
     padding-top: density(5);
 }
@@ -181,7 +181,7 @@ form.filters {
     .indicator::before {
         /*color: var(--background);
         background: var(--foreground-light);*/
-        border: 1px solid var(--foreground);
+        border: 1px solid var(--color-base-content);
         display: inline-block;
         margin-right: density(4);
         text-align: center;
@@ -193,7 +193,7 @@ form.filters {
 
     /* label when checked */
     input:checked + .indicator + span {
-        color: var(--secondary);
+        color: var(--color-secondary);
     }
 
     [type="checkbox"] + .indicator::before {
@@ -203,7 +203,7 @@ form.filters {
     }
 
     [type="checkbox"]:checked + .indicator::before {
-        color: var(--success);
+        color: var(--color-success);
     }
 
     [type="radio"] + .indicator:before {
@@ -215,7 +215,7 @@ form.filters {
     }
 
     [type="radio"]:checked + .indicator:before {
-        background: var(--success);
+        background: var(--color-success);
     }
 
     .exclude {
@@ -224,7 +224,7 @@ form.filters {
         }
 
         [type="checkbox"]:checked + .indicator:before {
-            color: var(--error);
+            color: var(--color-error);
         }
     }
 }

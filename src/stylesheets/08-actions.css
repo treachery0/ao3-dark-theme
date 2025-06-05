@@ -20,7 +20,7 @@ ul.actions {
 }
 
 .actions a, .actions a:link, .action, .action:link, .actions button, .actions input, input[type="submit"], button, .current, .actions label {
-    color: var(--foreground-light);
+    color: var(--color-base-content);
     width: auto;
     font-size: 100%;
     line-height: 1.25;
@@ -31,7 +31,7 @@ ul.actions {
     overflow: visible;
     position: relative;
     text-decoration: none;
-    border: 1px solid var(--secondary);
+    border: 1px solid var(--color-secondary);
     background: transparent;
     border-radius: round(2);
 }
@@ -65,22 +65,22 @@ ol.pagination, div.pagination, ol.year {
 }
 
 .actions a:hover, .actions button:hover, .actions input:hover, .actions a:focus, .actions button:focus, .actions input:focus, label.action:hover, .action:hover, .action:focus {
-    background: var(--foreground-transparent);
+    background: alpha(var(--color-base-content), 10%);
 }
 
 .actions a:active, .current, a.current, a:link.current, .current a:visited {
-    color: var(--secondary-contrast);
-    background: var(--secondary);
+    color: var(--color-secondary-content);
+    background: var(--color-secondary);
 }
 
 .actions label.disabled {
-    background: var(--background);
+    background: var(--color-base-200);
 }
 
 .actions .disabled select {
     background: transparent;
-    color: var(--foreground-dark);
-    border-color: var(--foreground);
+    color: var(--color-neutral);
+    border-color: var(--color-base-content);
 }
 
 .actions li a, .actions li button, .actions li input, .actions li input[type="submit"], .actions li .current, .actions li label {
@@ -93,7 +93,7 @@ span.delete {
     a {
         border: 0;
         padding: density(0, 4);
-        color: var(--error);
+        color: var(--color-error);
         font-weight: 900;
     }
 }
@@ -113,10 +113,10 @@ h2.landmark {
 }
 
 .secondary {
-    background: var(--background);
+    background: var(--color-base-200);
     position: absolute;
     z-index: 99;
-    border: 1px solid var(--foreground);
+    border: 1px solid var(--color-base-content);
     margin: auto;
     padding: 0 0.375em;
     overflow: hidden;

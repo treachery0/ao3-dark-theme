@@ -11,7 +11,7 @@ System messages use the following colours:
 
 /* We don't generally chain class selectors, but Devise's non-customizable alert class conflicts with ours, making it necessary here */
 .required, .error, .alert.flash {
-    color: var(--error);
+    color: var(--color-error);
 }
 
 .footnote {
@@ -31,8 +31,8 @@ div.error {
 }
 
 .notice, .comment_notice, .kudos_notice, ul.notes, .caution, .error, .comment_error, .kudos_error, .alert.flash {
-    background: var(--info);
-    color: var(--info-contrast);
+    background: var(--color-info);
+    color: var(--color-info-content);
     margin: 0.643em auto;
     padding: density(2, 3);
     clear: right;
@@ -41,13 +41,13 @@ div.error {
 }
 
 .caution {
-    background: var(--warning);
-    color: var(--warning-contrast);
+    background: var(--color-warning);
+    color: var(--color-warning-content);
 }
 
 .error, .comment_error, .kudos_error, .alert.flash {
-    background: var(--error);
-    color: var(--error-contrast);
+    background: var(--color-error);
+    color: var(--color-error-content);
 }
 
 p.notes {
@@ -100,7 +100,7 @@ alert => yellow-orange to alert users of problems or planned downtime
     position: relative;
 
     .userstuff {
-        background: var(--background-light);
+        background: var(--color-base-300);
         margin: density(0, 16);
         padding: density(3, 6);
         text-align: left;
@@ -120,8 +120,8 @@ alert => yellow-orange to alert users of problems or planned downtime
 }
 
 .announcement input[type="submit"], .announcement .action {
-    background: var(--secondary);
-    border: 1px solid var(--foreground);
+    background: var(--color-secondary);
+    border: 1px solid var(--color-base-content);
     font-size: 0.875em;
     padding: density(2, 4);
     border-radius: round(16);
@@ -136,19 +136,19 @@ alert => yellow-orange to alert users of problems or planned downtime
 }
 
 .event .userstuff {
-    background: var(--background-light);
-    border-color: var(--foreground);
-    color: var(--foreground);
+    background: var(--color-base-300);
+    border-color: var(--color-base-content);
+    color: var(--color-base-content);
 
     a {
-        color: var(--foreground-light);
+        color: var(--color-base-content);
     }
 }
 
 .alert .userstuff {
-    background: var(--background-light);
-    border-color: var(--foreground);
-    color: var(--foreground);
+    background: var(--color-base-300);
+    border-color: var(--color-base-content);
+    color: var(--color-base-content);
 }
 
 /* thermometer JavaScript widget for fundraising drives
@@ -164,11 +164,11 @@ progress indicator colors are set in application.js */
     position: relative;
 
     .track {
-        border: 1px solid var(--foreground);
+        border: 1px solid var(--color-base-content);
         height: 1.25em;
         margin: 0 auto;
         position: relative;
-        background: var(--background-light);
+        background: var(--color-base-300);
     }
 
     .progress {
@@ -202,7 +202,7 @@ progress indicator colors are set in application.js */
 }
 
 span.symbol {
-    color: var(--info);
+    color: var(--color-info);
     font-family: var(--font-serif);
     border: 1px solid;
     border-radius: round(6);
@@ -223,7 +223,7 @@ span.symbol {
 }
 
 span.question {
-    border-color: var(--info);
+    border-color: var(--color-info);
 }
 
 a.question {
@@ -244,7 +244,7 @@ dl#symbols-key dd {
 }
 
 #symbols-key dl {
-    border: 1px solid var(--foreground);
+    border: 1px solid var(--color-base-content);
     margin-bottom: 1.286em;
     padding: 0.15em;
 }

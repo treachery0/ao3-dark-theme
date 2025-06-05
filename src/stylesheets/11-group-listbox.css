@@ -15,8 +15,8 @@ http://otwcode.github.com/docs/front_end_coding/patterns/listbox
         display: block;
         margin: 0;
         padding: density(2, 4);
-        background: var(--primary);
-        color: var(--primary-contrast);
+        background: var(--color-primary);
+        color: var(--color-primary-content);
         font-family: revert;
     }
 
@@ -26,7 +26,7 @@ http://otwcode.github.com/docs/front_end_coding/patterns/listbox
         margin: 0;
         float: none;
         clear: right;
-        background: var(--background-light);
+        background: var(--color-base-300);
 
         &::after {
             content: " ";

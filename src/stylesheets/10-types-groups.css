@@ -3,7 +3,7 @@ http://otwcode.github.com/docs/front_end_coding/patterns/supertypes
 */
 
 a.tag {
-    color: var(--foreground-light);
+    color: var(--color-base-content);
     line-height: 1.5;
     text-decoration: none;
     padding: 0;
@@ -11,7 +11,7 @@ a.tag {
 }
 
 a.tag:hover, .listbox .heading a.tag:visited:hover {
-    background: var(--foreground-transparent);
+    background: alpha(var(--color-base-content), 10%);
 }
 
 .tags li {
@@ -33,7 +33,7 @@ ul.cloud {
 }
 
 ul.cloud a.tag {
-    color: var(--secondary);
+    color: var(--color-secondary);
 }
 
 a.cloud1 {
@@ -147,7 +147,7 @@ a.work {
     font-size: 1.143em;
     font-family: var(--font-serif);
     margin: density(4, 0);
-    color: var(--primary);
+    color: var(--color-primary);
 }
 
 .warning, .warnings, span.byline, a.user {
@@ -155,19 +155,19 @@ a.work {
 }
 
 li.warnings a {
-    color: var(--warning);
+    color: var(--color-warning);
 }
 
 li.relationships a {
-    color: var(--info);
+    color: var(--color-info);
 }
 
 li.characters a {
-    color: var(--success);
+    color: var(--color-success);
 }
 
 .actions .reindex a {
-    border-bottom: 3px solid var(--foreground);
+    border-bottom: 3px solid var(--color-base-content);
 }
 
 .series.footnote {
@@ -178,7 +178,7 @@ li.characters a {
 /* circle dividers for series navigation on works */
 
 span.series .divider {
-    color: var(--foreground);
+    color: var(--color-base-content);
 }
 
 span.series .previous + .divider:before {
@@ -232,7 +232,7 @@ dl.stats dd {
 }
 
 .statistics .index li:nth-of-type(even) {
-    background: var(--background-light);
+    background: var(--color-base-300);
 }
 
 .concise li {

@@ -3,7 +3,7 @@ http://otwcode.github.com/docs/front_end_coding/patterns/modifiers
 */
 
 .draft {
-    border: 2px dashed var(--foreground);
+    border: 2px dashed var(--color-base-content);
     padding: 0.75em;
     border-radius: round(4);
 }
@@ -15,7 +15,7 @@ http://otwcode.github.com/docs/front_end_coding/patterns/modifiers
 /*(these states spoof the ".navigation .current" style)*/
 
 span.unread, .replied, span.claimed, .actions span.defaulted {
-    color: var(--foreground-light);
+    color: var(--color-base-content);
     width: auto;
     line-height: 1.25;
     vertical-align: middle;
@@ -24,12 +24,12 @@ span.unread, .replied, span.claimed, .actions span.defaulted {
     white-space: nowrap;
     overflow: visible;
     position: relative;
-    border: 1px solid var(--secondary);
+    border: 1px solid var(--color-secondary);
     border-radius: round(2);
 }
 
 .actions span.defaulted {
-    color: var(--foreground);
+    color: var(--color-base-content);
 }
 
 .canonical, li.requested {
@@ -41,25 +41,25 @@ span.unread, .replied, span.claimed, .actions span.defaulted {
 }
 
 .draggable, .droppable, span.requested, .nominations .rejected {
-    color: var(--primary);
+    color: var(--color-primary);
 }
 
 span.offered, .replied, .nominations .approved {
-    color: var(--foreground);
+    color: var(--color-base-content);
 }
 
 .nominations {
     .approved {
-        background: var(--success);
+        background: var(--color-success);
     }
 
     .rejected {
-        background: var(--error);
+        background: var(--color-error);
     }
 }
 
 span.offered.requested {
-    color: var(--foreground);
+    color: var(--color-base-content);
 }
 
 /* Arrows for the accordion widget */

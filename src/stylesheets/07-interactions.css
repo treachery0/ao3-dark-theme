@@ -27,7 +27,7 @@ but it's probably not complete. */
 
 fieldset, form dl, fieldset dl dl, fieldset fieldset fieldset, fieldset fieldset dl dl, dd.hideme, form blockquote.userstuff {
     display: block;
-    background: var(--background-light);
+    background: var(--color-base-300);
     margin: density(6);
     padding: density(6);
 }
@@ -39,7 +39,7 @@ fieldset dl, fieldset.actions, fieldset dl fieldset dl {
 }
 
 fieldset fieldset, fieldset dl dl, form blockquote.userstuff {
-    background: var(--background);
+    background: var(--color-base-200);
     clear: right;
 }
 
@@ -63,8 +63,8 @@ label {
 input, textarea {
     font-family: var(--font-sans);
     width: 100%;
-    border: 1px solid var(--foreground);
-    color: var(--foreground);
+    border: 1px solid var(--color-base-content);
+    color: var(--color-base-content);
     border-radius: round(2);
     padding: density(2);
     background: transparent;
@@ -80,7 +80,7 @@ textarea.large {
 
 input:focus, select:focus, textarea:focus {
     outline-offset: 1px;
-    outline: 1px solid var(--secondary);
+    outline: 1px solid var(--color-secondary);
 }
 
 input[type="radio"] + label, input[type="checkbox"] + label {
@@ -88,9 +88,9 @@ input[type="radio"] + label, input[type="checkbox"] + label {
 }
 
 select {
-    color: var(--foreground);
+    color: var(--color-base-content);
     background: transparent;
-    border: 1px solid var(--foreground);
+    border: 1px solid var(--color-base-content);
     border-radius: round(2);
     padding: density(2);
     vertical-align: text-top;
@@ -127,7 +127,7 @@ form dt {
     min-width: 10.5em;
     width: 25%;
     padding: density(2, 4, 1, 0);
-    border-bottom: 1px solid var(--foreground);
+    border-bottom: 1px solid var(--color-base-content);
 }
 
 form dd, form dd.any {
@@ -145,7 +145,7 @@ form dd + dd {
 }
 
 form dd.required {
-    color: var(--foreground-dark);
+    color: var(--color-base-content);
 }
 
 form .footnote code {
@@ -186,19 +186,19 @@ We only use error messages for LiveValidation. Style spoofs the system error mes
 }
 
 .LV_invalid {
-    background: var(--background-light);
-    border: 1px solid var(--error);
-    color: var(--error);
+    background: var(--color-base-300);
+    border: 1px solid var(--color-error);
+    color: var(--color-error);
     padding: density(2, 3);
     border-radius: round(2);
 }
 
 .LV_invalid_field, input.LV_invalid_field:hover, input.LV_invalid_field:active, textarea.LV_invalid_field:hover, textarea.LV_invalid_field:active {
-    border: 1px solid var(--error);
+    border: 1px solid var(--color-error);
 }
 
 .LV_invalid:before {
-    border-color: var(--error) transparent;
+    border-color: var(--color-error) transparent;
     border-style: solid;
     border-width: 0 0.643em 0.643em;
     content: "";
@@ -210,9 +210,9 @@ We only use error messages for LiveValidation. Style spoofs the system error mes
 /* WIDGET: AUTO COMPLETE */
 
 .autocomplete div.dropdown ul {
-    background: var(--background);
+    background: var(--color-base-200);
     padding: density(1);
-    border: 1px solid var(--foreground-transparent);
+    border: 1px solid alpha(var(--color-base-content), 10%);
     line-height: 1.286;
     display: block;
 }
@@ -236,7 +236,7 @@ form li ul.autocomplete li.input {
 }
 
 .autocomplete .dropdown ul li:hover, .autocomplete .dropdown li.selected {
-    background: var(--background-light);
+    background: var(--color-base-300);
 }
 
 .autocomplete {
@@ -250,8 +250,8 @@ form li ul.autocomplete li.input {
 
     li.added {
         border-radius: round(2);
-        background: var(--foreground-transparent);
-        color: var(--foreground-light);
+        background: alpha(var(--color-base-content), 10%);
+        color: var(--color-base-content);
         margin: density(2);
         padding: density(0, 2, 0, 6);
         display: inline-block;
@@ -261,16 +261,16 @@ form li ul.autocomplete li.input {
 /* WIDGET: SORTABLE LIST (note: hope to merge with .sortable and .draggable etc)*/
 
 .ui-sortable li {
-    background: var(--background-light);
-    border: 2px solid var(--foreground);
+    background: var(--color-base-300);
+    border: 2px solid var(--color-base-content);
     float: left;
     width: 100%;
     clear: both;
 }
 
 .ui-sortable li:hover {
-    background: var(--background-light);
-    border: 2px solid var(--foreground);
+    background: var(--color-base-300);
+    border: 2px solid var(--color-base-content);
     cursor: move;
 }
 
@@ -299,7 +299,7 @@ form li ul.autocomplete li.input {
 /* WIDGET: DATEPICKER, TIMEPICKER (todo, requires ARIA managed focus) */
 
 #ui-datepicker-div {
-    background: var(--background-light);
+    background: var(--color-base-300);
     display: none;
     overflow: hidden;
     padding: density(6);
@@ -325,19 +325,19 @@ form li ul.autocomplete li.input {
 }
 
 .ui-datepicker table {
-    background: var(--background);
+    background: var(--color-base-200);
 }
 
 .ui-datepicker td {
-    border: 1px solid var(--foreground);
+    border: 1px solid var(--color-base-content);
 }
 
 .ui-datepicker tr:hover {
-    background: var(--background-light);
+    background: var(--color-base-300);
 }
 
 .ui-datepicker td:hover {
-    background: var(--background-light);
+    background: var(--color-base-300);
 }
 
 .ui-datepicker td a {
@@ -384,8 +384,8 @@ qTip2 Copyright 2009-2010 Craig Michael Thompson - http://craigsworks.com*/
 .qtip-content {
     position: relative;
     padding: density(2);
-    background: var(--background-light);
-    border: 1px solid var(--foreground);
+    background: var(--color-base-300);
+    border: 1px solid var(--color-base-content);
     overflow: hidden;
     word-wrap: break-word;
 }
@@ -439,8 +439,8 @@ a.modal.help {
 }
 
 #modal {
-    background: var(--background);
-    border: 1px solid var(--foreground);
+    background: var(--color-base-200);
+    border: 1px solid var(--color-base-content);
     margin: 3% 0;
     max-width: 800px;
     min-width: 200px;
@@ -451,7 +451,7 @@ a.modal.help {
     z-index: 501;
 
     .content {
-        border-bottom: 1px solid var(--foreground-dark);
+        border-bottom: 1px solid var(--color-base-content);
         font-size: 0.875em;
         overflow: auto;
         padding: density(12);
@@ -488,7 +488,7 @@ a.modal.help {
 
     a {
         border: 0;
-        color: var(--foreground-light);
+        color: var(--color-base-content);
     }
 }
 
@@ -544,7 +544,7 @@ a.modal.help {
 /*MODE: DYNAMIC is in early dev and so currently sharing styles with toggled */
 
 div.dynamic {
-    background: var(--background-light);
+    background: var(--color-base-300);
     position: absolute;
     z-index: 500;
 }
@@ -557,22 +557,22 @@ form.verbose legend, .verbose form legend {
     height: auto;
     width: auto;
     font-size: 100%;
-    background: var(--info);
-    color: var(--info-contrast);
+    background: var(--color-info);
+    color: var(--color-info-content);
     padding: density(2, 8);
     border-radius: round(2);
     opacity: 1;
 
     span.symbol {
-        color: var(--info-contrast);
-        border-color: var(--info-contrast);
+        color: var(--color-info-content);
+        border-color: var(--color-info-content);
     }
 
     .action {
         padding: density(1, 6);
         margin-left: density(4);
-        color: var(--info-contrast);
-        border-color: var(--info-contrast);
+        color: var(--color-info-content);
+        border-color: var(--color-info-content);
     }
 }
 
@@ -590,7 +590,7 @@ form.simple span.actions {
 
 form.single fieldset {
     background: transparent;
-    border: 1px solid var(--foreground);
+    border: 1px solid var(--color-base-content);
 }
 
 form.single legend {
@@ -651,7 +651,7 @@ form.single .autocomplete + input + span.submit input[type="submit"] {
 
 .toggled form, .dynamic form {
     padding: density(4);
-    background: var(--background-light);
+    background: var(--color-base-300);
 }
 
 .dynamic form fieldset, .toggled form fieldset, .toggled form dl, .secondary .toggled form, .secondary form {
@@ -671,7 +671,7 @@ form.single .autocomplete + input + span.submit input[type="submit"] {
 
 .post .required .warnings, dd.required {
     font-weight: normal;
-    color: var(--foreground);
+    color: var(--color-base-content);
 }
 
 .post .text textarea {

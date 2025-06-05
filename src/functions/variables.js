@@ -1,9 +1,9 @@
 function density(...values) {
-    return multiplyVariable(values, '--density');
+    return multiplyVariable(values, '--ui-density');
 }
 
 function round(...values) {
-    return multiplyVariable(values, '--roundness');
+    return multiplyVariable(values, '--ui-roundness');
 }
 
 function multiplyVariable(values, variable) {
@@ -22,7 +22,16 @@ function multiplyVariable(values, variable) {
     return `calc(${values} * var(${variable}))`;
 }
 
+function alpha(color, opacity) {
+    if(opacity === undefined) {
+        return color;
+    }
+
+    return `color-mix(in lch, ${color} ${opacity}, transparent)`
+}
+
 export default {
     density,
-    round
+    round,
+    alpha
 }

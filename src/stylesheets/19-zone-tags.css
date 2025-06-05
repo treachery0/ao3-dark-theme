@@ -35,7 +35,7 @@ dl.nomination {
 }
 
 .nomination dt {
-    background: var(--background);
+    background: var(--color-base-200);
     width: 50%;
 }
 

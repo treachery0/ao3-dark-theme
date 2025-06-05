@@ -1,5 +1,6 @@
 import oklabFunction from '@csstools/postcss-oklab-function';
 import minify from '@csstools/postcss-minify';
+import resolveColorMix from '@csstools/postcss-color-mix-function';
 import resolveImport from 'postcss-import';
 import resolveNested from 'postcss-nested';
 import customProperties from 'postcss-custom-properties';
@@ -34,6 +35,11 @@ export default {
 
         // simplify calc statements
         resolveCalc,
+
+        // replace color mix functions
+        resolveColorMix({
+            preserve: false
+        }),
 
         // remove root selector
         discard({

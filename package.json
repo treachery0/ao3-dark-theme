@@ -1,6 +1,6 @@
 {
   "name": "ao3-site-skin",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "type": "module",
   "private": true,
   "scripts": {
@@ -8,6 +8,7 @@
     "build-info": "npx postcss src/inputs -d dist && find dist/*.css -type f -exec stat --format=\"%6s bytes | %n\" {} \\;\n"
   },
   "dependencies": {
+    "@csstools/postcss-color-mix-function": "^3.0.10",
     "@csstools/postcss-minify": "^2.0.0",
     "@csstools/postcss-oklab-function": "^4.0.0",
     "postcss": "^8.5.0",

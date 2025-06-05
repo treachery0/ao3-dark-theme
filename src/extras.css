@@ -52,7 +52,7 @@ li:has(> .rss) {
 */
 .dashboard .home .header h2 {
     font-family: revert;
-    color: var(--foreground-light);
+    color: var(--color-base-content);
 
     &::before, &::after {
         content: "✨";

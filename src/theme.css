@@ -1,45 +1,36 @@
 /*
   Define all global variables here.
+  You can use https://daisyui.com/theme-generator for easy theme generation (color variables are named accordingly).
 */
 :root {
-    /* background color */
-    --_background-ch: 0.003 248;
-    --background: oklch(0.20 var(--_background-ch));
-    --background-light: oklch(0.25 var(--_background-ch));
-    --background-dark: oklch(0.15 var(--_background-ch));
-    --background-transparent: oklch(0 0 0 / 0.10);
+    /* colors */
+    --color-base-100: oklch(0.15 0.003 248);
+    --color-base-200: oklch(0.20 0.003 248);
+    --color-base-300: oklch(0.25 0.003 248);
+    --color-base-content: oklch(0.85 0.003 248);
 
-    /* foreground color */
-    --_foreground-ch: 0.011 248;
-    --foreground: oklch(0.80 var(--_foreground-ch));
-    --foreground-light: oklch(0.95 var(--_foreground-ch));
-    --foreground-dark: oklch(0.65 var(--_foreground-ch));
-    --foreground-transparent: oklch(1 0 0 / 0.10);
+    --color-primary: oklch(0.40 0.176 29.23);
+    --color-primary-content: var(--color-base-content);
+    --color-secondary: oklch(0.80 0.12 75);
+    --color-secondary-content: var(--color-base-100);
+    --color-accent: oklch(0.71 0.16 300);
+    --color-accent-content: var(--color-base-100);
+    --color-neutral: oklch(0.40 0.003 248);
+    --color-neutral-content: var(--color-base-content);
 
-    /* primary color */
-    --_primary-ch: 0.176 29.23;
-    --primary: oklch(0.40 var(--_primary-ch));
-    --primary-contrast: var(--foreground-light);
+    --color-success: oklch(0.80 0.10 140);
+    --color-success-content: var(--color-base-100);
+    --color-info: oklch(0.80 0.10 210);
+    --color-info-content: var(--color-base-100);
+    --color-warning: oklch(0.80 0.10 80);
+    --color-warning-content: var(--color-base-100);
+    --color-error: oklch(0.80 0.10 0);
+    --color-error-content: var(--color-base-100);
 
-    /* secondary color */
-    --_secondary-ch: 0.12 67;
-    --secondary: oklch(0.83 var(--_secondary-ch));
-    --secondary-contrast: var(--background-dark);
-
-    /* special colors */
-    --_special-lc: 0.80 0.10;
-    --success: oklch(var(--_special-lc) 140);
-    --success-contrast: var(--background-dark);
-    --info: oklch(var(--_special-lc) 210);
-    --info-contrast: var(--background-dark);
-    --warning: oklch(var(--_special-lc) 80);
-    --warning-contrast: var(--background-dark);
-    --error: oklch(var(--_special-lc) 0);
-    --error-contrast: var(--background-dark);
-
-    /* UI parameters */
-    --density: 0.125em;
-    --roundness: 0.125em;
+    /* ui parameters */
+    --ui-density: 0.125rem;
+    --ui-roundness: 0.125rem;
+    --ui-border: 1px;
 
     /* fonts */
     --font-serif: 'Georgia', serif;

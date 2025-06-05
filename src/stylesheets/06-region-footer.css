@@ -1,6 +1,6 @@
 #footer {
-    background: var(--primary);
-    color: var(--primary-contrast);
+    background: var(--color-primary);
+    color: var(--color-primary-content);
     border-top: 2px solid;
     float: left;
     font-size: 0.75em;
@@ -28,7 +28,7 @@
         margin: auto;
         padding: 0;
         border-radius: 0;
-        color: var(--primary-contrast);
+        color: var(--color-primary-content);
         display: inline;
         border-bottom: 1px solid;
         line-height: 1.5;
@@ -51,6 +51,6 @@
 
     .heading {
         display: block;
-        color: var(--primary-contrast);
+        color: var(--color-primary-content);
     }
 }

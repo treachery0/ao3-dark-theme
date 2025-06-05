@@ -3,8 +3,8 @@
 /* 04 region dashboard */
 
 #dashboard, #dashboard.own {
-    border-bottom: 10px solid var(--primary);
-    border-top: 10px solid var(--primary);
+    border-bottom: 10px solid var(--color-primary);
+    border-top: 10px solid var(--color-primary);
     border-radius: round(2);
     padding: density(4, 0);
 }
@@ -32,7 +32,7 @@
     }
 
     .secondary {
-        background: var(--background-light);
+        background: var(--color-base-300);
         padding: density(3, 0, 5);
 
         a {

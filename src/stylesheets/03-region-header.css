@@ -18,7 +18,7 @@
 
         /* site title */
         a {
-            color: var(--secondary);
+            color: var(--color-secondary);
             font-size: 1.75em;
             line-height: 1.75em;
         }
@@ -38,13 +38,13 @@
 
     /* navigation bar */
     .primary {
-        background: var(--primary);
+        background: var(--color-primary);
         padding: density(0, 16);
         width: 100%;
 
         a {
             padding: density(4, 6);
-            color: var(--foreground-light);
+            color: var(--color-base-content);
         }
     }
 
@@ -56,8 +56,8 @@
 
     /* dropdown list */
     .menu {
-        background: var(--background-light);
-        border: 1px solid var(--foreground-transparent);
+        background: var(--color-base-300);
+        border: 1px solid alpha(var(--color-base-content), 10%);
         border-top: none;
         border-radius: round(0, 0, 4, 4);
         display: none;
@@ -70,11 +70,11 @@
             text-align: left;
 
             a {
-                border-bottom: 1px solid var(--foreground-dark);
+                border-bottom: 1px solid var(--color-neutral);
                 display: block;
 
                 &:hover, &:focus {
-                    background: var(--foreground-transparent);
+                    background: alpha(var(--color-base-content), 10%);
                 }
             }
 
@@ -97,8 +97,8 @@
 
         /* search input */
         #site_search {
-            color: var(--background);
-            background: var(--foreground-light);
+            color: var(--color-base-200);
+            background: var(--color-base-content);
             border: none;
             outline-offset: 0;
             margin: density(1.5, 4);
@@ -107,8 +107,8 @@
 
         /* search button */
         .button {
-            color: var(--background);
-            background: var(--foreground-light);
+            color: var(--color-base-200);
+            background: var(--color-base-content);
             border: none;
             margin: 0;
             padding: density(2, 4);
@@ -130,7 +130,7 @@
     }
 
     .actions a:hover, .actions a:focus, .dropdown:hover a, .open a {
-        background: var(--background-light);
+        background: var(--color-base-300);
     }
 
 
@@ -179,10 +179,10 @@
             padding: density(3, 6);
 
             &:hover, &:focus {
-                color: var(--secondary);
+                color: var(--color-secondary);
 
                 &[rel=nofollow] {
-                    color: var(--error);
+                    color: var(--color-error);
                 }
             }
         }

@@ -85,7 +85,7 @@
     }
 
     h2 {
-        color: var(--foreground);
+        color: var(--color-base-content);
         margin: density(12, 0);
         display: block;
     }
@@ -93,7 +93,7 @@
     h3 {
         font-weight: 500;
         padding: density(1);
-        border-bottom: 0.25em double var(--foreground);
+        border-bottom: 0.25em double var(--color-base-content);
     }
 
     h4 {
@@ -132,7 +132,7 @@
         line-height: 1.5;
         margin-inline-start: density(12);
         padding: density(6);
-        border-inline-start: 2px solid var(--foreground);
+        border-inline-start: 2px solid var(--color-base-content);
 
         blockquote {
             padding: density(2);
